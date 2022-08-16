@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/GrassFieldBackground" />
+        app:srcCompat="@drawable/grass_field_background" />
 
     <ImageView
         android:id="@+id/ST"
@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/EmptyCard" />
+        app:srcCompat="@drawable/empty_card" />
 
     <ImageView
         android:id="@+id/LW"
@@ -40,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.078"
-        app:srcCompat="@drawable/EmptyCard" />
+        app:srcCompat="@drawable/empty_card" />
 
     <ImageView
         android:id="@+id/RW"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.078"
-        app:srcCompat="@drawable/EmptyCard" />
+        app:srcCompat="@drawable/empty_card" />
 
     <ImageView
         android:id="@+id/LCM"
@@ -64,7 +64,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.359"
-        app:srcCompat="@drawable/EmptyCard" />
+        app:srcCompat="@drawable/empty_card" />
 
     <ImageView
         android:id="@+id/RCM"
@@ -76,7 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.359"
-        app:srcCompat="@drawable/EmptyCard" />
+        app:srcCompat="@drawable/empty_card" />
 
     <ImageView
         android:id="@+id/RB"
@@ -88,7 +88,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.669"
-        app:srcCompat="@drawable/EmptyCard" />
+        app:srcCompat="@drawable/empty_card" />
 
     <ImageView
         android:id="@+id/RCB"
@@ -100,7 +100,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.695"
-        app:srcCompat="@drawable/EmptyCard" />
+        app:srcCompat="@drawable/empty_card" />
 
     <ImageView
         android:id="@+id/LCB"
@@ -112,7 +112,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.695"
-        app:srcCompat="@drawable/EmptyCard" />
+        app:srcCompat="@drawable/empty_card" />
 
     <ImageView
         android:id="@+id/LB"
@@ -124,7 +124,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.669"
-        app:srcCompat="@drawable/EmptyCard" />
+        app:srcCompat="@drawable/empty_card" />
 
     <ImageView
         android:id="@+id/GK"
@@ -136,7 +136,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.949"
-        app:srcCompat="@drawable/EmptyCard" />
+        app:srcCompat="@drawable/empty_card" />
 
     <ImageView
         android:id="@+id/CAM"
@@ -148,7 +148,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.32"
-        app:srcCompat="@drawable/EmptyCard" />
+        app:srcCompat="@drawable/empty_card" />
 
     <EditText
         android:id="@+id/editTextLW"

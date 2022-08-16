@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/GrassFieldBackground" />
+        app:srcCompat="@drawable/grass_field_background" />
 
     <Button
         android:id="@+id/singlePlayer"
