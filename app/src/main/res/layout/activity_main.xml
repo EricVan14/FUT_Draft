@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_neutral20"
+    android:background="@color/white"
     android:visibility="visible"
     tools:context=".MainActivity">
 
@@ -18,7 +18,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/grass_field_background" />
+        app:srcCompat="@drawable/grass_field_background"
+        android:contentDescription="TODO" />
 
     <Button
         android:id="@+id/singlePlayer"
@@ -31,7 +32,8 @@
         android:backgroundTint="#474343"
         android:fadingEdge="vertical"
         android:text="Single player"
-        android:textColor="#BDBABA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,16 +43,17 @@
 
     <Button
         android:id="@+id/splitScreen"
+        style="@style/Widget.Material3.Button.ElevatedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="435dp"
-        android:textColor="#BDBABA"
         android:width="200dp"
         android:height="100dp"
-        style="@style/Widget.Material3.Button.ElevatedButton"
         android:backgroundTint="#474343"
-        android:textSize="24sp"
         android:text="Split Screen"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
