@@ -14,6 +14,9 @@
         android:theme="@style/Theme.FUT_Draft"
         tools:targetApi="31">
         <activity
+            android:name=".SinglePickLW"
+            android:exported="false" />
+        <activity
             android:name=".SinglePlayer"
             android:exported="false" />
         <activity

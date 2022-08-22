@@ -9,17 +9,16 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="411dp"
-        android:layout_height="729dp"
+        android:id="@+id/BackgroundGrass"
+        android:layout_width="480dp"
+        android:layout_height="873dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/grass_field_background"
-        android:contentDescription="TODO" />
+        app:layout_constraintVertical_bias="0.47"
+        app:srcCompat="@drawable/grass_field_background" />
 
     <Button
         android:id="@+id/singlePlayer"
@@ -27,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-250dp"
+        android:layout_marginBottom="212dp"
         android:width="200dp"
         android:height="100dp"
         android:backgroundTint="#474343"
@@ -38,15 +38,17 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="@+id/BackgroundGrass"
+        app:layout_constraintVertical_bias="0.626" />
 
     <Button
         android:id="@+id/splitScreen"
         style="@style/Widget.Material3.Button.ElevatedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="435dp"
+        android:layout_marginTop="208dp"
         android:width="200dp"
         android:height="100dp"
         android:backgroundTint="#474343"
@@ -54,10 +56,11 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/BackgroundGrass"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.568" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
