@@ -63,6 +63,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.execSQL(upgrade);
     }
 
+    public void clearDatabase() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String clearDBQuery = "DELETE FROM "+PLAYER_TABLE_NAME;
+        db.execSQL(clearDBQuery);
+    }
+
     public void addPlayer(String drawableName, String position, String club, String country, String league, String fullName){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -83,7 +89,16 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.addPlayer("acerbi", "CB", "Lazio", "Italy", "SERIE_A", "Francesco Acerbi");
         this.addPlayer("adam_armstrong", "ST", "Southampton", "England", "Premier_league", "Adam Armstrong");
         this.addPlayer("adama_traore", "RW", "Wolverhampton_Wanderers", "Spain", "Premier_league", "Adama Traore");
-        
+        this.addPlayer("adli", "MID", "Milan", "France", "SERIE_A", "Yacine Adli");
+        this.addPlayer("aebischer", "MID", "Bologna", "Switzerland", "SERIE_A", "Michel Aebischer");
+        this.addPlayer("aguerd", "CB", "West_Ham", "Morocco", "Premier_league", "Naif Aguerd");
+        this.addPlayer("ajer", "CB", "Brentford", "Norway", "Premier_league", "kristoffer Ajer");
+        this.addPlayer("ake", "CB", "Manchester_City", "Netherlands", "Premier_league", "Nathan Ake");
+        this.addPlayer("akpa_akpro", "MID", "Lazio", "Ivory_Coast", "SERIE_A", "Jean-Daniel Akpa Akpro");
+        this.addPlayer("albrighton", "RW", "Leicester_City", "England", "Premier_league", "Marc Albrighton");
+        this.addPlayer("alex_sandro", "LB", "Juventus", "Brazil", "SERIE_A", "Alex Sandro");
+        this.addPlayer("alex_telles", "LB", "Manchester_United", "Brazil", "Premier_league", "Alex Telles");
+
 
     }
 
@@ -99,26 +114,24 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     }
 
-    public ArrayList<String> findDrawableNamesFromPosition(String position){
+    public ArrayList<String> findDrawableNamesFromPosition(String position, ArrayList<String> alreadyPicked){
         SQLiteDatabase db = this.getReadableDatabase();
         //SELECT "drawableName" FROM "players" WHERE "position" = position
         String query = "SELECT " + PLAYER_COL_DRAWABLE_NAME + " FROM " + PLAYER_TABLE_NAME + " WHERE " + PLAYER_COL_POSITION + " = \"" + position + "\"";
+        //String query = "SELECT " + PLAYER_COL_DRAWABLE_NAME + " FROM " + PLAYER_TABLE_NAME;
         ArrayList<String> drawableNamesArrayList = new ArrayList<>();
         String foundPlayer = null;
 
         ////////////////          First Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            first = this.getRandomNumber(0,100);
+            first = this.getRandomNumber(0,5);
             Cursor cursor = db.rawQuery(query, null);
-            for (int i = 0; i < first; i++) {
-                if (cursor.moveToFirst()) {
-                    continue;
-                }
-            }
-
-            if (cursor.moveToFirst()) {
+            if(cursor.moveToPosition(first)){
                 foundPlayer = cursor.getString(0);
+                if(alreadyPicked.contains(foundPlayer)){
+                    foundPlayer = null;
+                }
             }
             cursor.close();
         }
@@ -129,16 +142,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Second Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            second = this.getRandomNumber(0,100);
+            second = this.getRandomNumber(0,5);
             Cursor cursor = db.rawQuery(query, null);
-            for (int i = 0; i < second; i++) {
-                if (cursor.moveToFirst()) {
-                    continue;
-                }
-            }
-
-            if (cursor.moveToFirst() && second != first) {
+            if(cursor.moveToPosition(second)){
                 foundPlayer = cursor.getString(0);
+                if(alreadyPicked.contains(foundPlayer)){
+                    foundPlayer = null;
+                }
             }
             cursor.close();
         }
@@ -150,16 +160,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Third Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            third = this.getRandomNumber(0,100);
+            third = this.getRandomNumber(0,5);
             Cursor cursor = db.rawQuery(query, null);
-            for (int i = 0; i < third; i++) {
-                if (cursor.moveToFirst()) {
-                    cursor.moveToNext();
-                }
-            }
-
-            if (cursor.moveToFirst() && (second != third)  && (first != third)) {
+            if(cursor.moveToPosition(third)){
                 foundPlayer = cursor.getString(0);
+                if(alreadyPicked.contains(foundPlayer)){
+                    foundPlayer = null;
+                }
             }
             cursor.close();
         }
@@ -169,16 +176,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Fourth Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            fourth = this.getRandomNumber(0,100);
+            fourth = this.getRandomNumber(0,5);
             Cursor cursor = db.rawQuery(query, null);
-            for (int i = 0; i < fourth; i++) {
-                if (cursor.moveToFirst()) {
-                    cursor.moveToNext();
-                }
-            }
-
-            if (cursor.moveToFirst() && (second != fourth)  && (first != fourth) && (third != fourth)) {
+            if(cursor.moveToPosition(fourth)){
                 foundPlayer = cursor.getString(0);
+                if(alreadyPicked.contains(foundPlayer)){
+                    foundPlayer = null;
+                }
             }
             cursor.close();
         }
@@ -189,16 +193,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Fifth Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            fifth = this.getRandomNumber(0,100);
+            fifth = this.getRandomNumber(0,5);
             Cursor cursor = db.rawQuery(query, null);
-            for (int i = 0; i < fifth; i++) {
-                if (cursor.moveToFirst()) {
-                    cursor.moveToNext();
-                }
-            }
-
-            if (cursor.moveToFirst() && (second != fifth)  && (first != fifth) && (third != fifth) && (fourth != fifth)) {
+            if(cursor.moveToPosition(fifth)){
                 foundPlayer = cursor.getString(0);
+                if(alreadyPicked.contains(foundPlayer)){
+                    foundPlayer = null;
+                }
             }
             cursor.close();
         }

@@ -24,9 +24,8 @@ public class MainActivity extends AppCompatActivity {
         splitScreen = findViewById(R.id.splitScreen);
 
         db = new DatabaseHandler(this);
-        if(!db.isEmpty()){
-            db.addDefaults();
-        }
+        db.clearDatabase();
+        db.addDefaults();
 
 
         singlePlayer.setOnClickListener(new View.OnClickListener() {

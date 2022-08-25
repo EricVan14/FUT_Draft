@@ -51,6 +51,8 @@ public class SinglePlayer extends AppCompatActivity {
         ///////////                  PREVIOUS SELECTIONS             ////////////////////////
 
         Bundle extras = getIntent().getExtras();
+        currentPlayerDrawableName = getIntent().getStringExtra("CURRENT_PLAYER_DRAWABLE_NAME");
+        currentPosition = getIntent().getStringExtra("POSITION");
         lwCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_LW");
         stCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_ST");
         rwCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_RW");
@@ -121,67 +123,66 @@ public class SinglePlayer extends AppCompatActivity {
         ///////////                  MOST RECENT SELECTION             ////////////////////////
 
 
-        if (extras != null) {
-            currentPlayerDrawableName = extras.getString("CURRENT_PLAYER_DRAWABLE_NAME");
-            currentPosition = extras.getString("POSITION");
-            if(currentPosition.equals("LW")) {
+
+        if(currentPosition != null) {
+            if (currentPosition.equals("LW")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 lw.setImageResource(id);
                 lwCurrentPlayerDrawableName = currentPlayerDrawableName;
             }
-            if(currentPosition.equals("ST")) {
+            if (currentPosition.equals("ST")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 st.setImageResource(id);
                 stCurrentPlayerDrawableName = currentPlayerDrawableName;
             }
-            if(currentPosition.equals("RW")) {
+            if (currentPosition.equals("RW")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 rw.setImageResource(id);
                 rwCurrentPlayerDrawableName = currentPlayerDrawableName;
             }
-            if(currentPosition.equals("LCM")) {
+            if (currentPosition.equals("LCM")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 lcm.setImageResource(id);
                 lcmCurrentPlayerDrawableName = currentPlayerDrawableName;
             }
-            if(currentPosition.equals("CAM")) {
+            if (currentPosition.equals("CAM")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 cam.setImageResource(id);
                 camCurrentPlayerDrawableName = currentPlayerDrawableName;
             }
-            if(currentPosition.equals("RCM")) {
+            if (currentPosition.equals("RCM")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 rcm.setImageResource(id);
                 rcmCurrentPlayerDrawableName = currentPlayerDrawableName;
             }
-            if(currentPosition.equals("LB")) {
+            if (currentPosition.equals("LB")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 lb.setImageResource(id);
                 lbCurrentPlayerDrawableName = currentPlayerDrawableName;
             }
-            if(currentPosition.equals("LCB")) {
+            if (currentPosition.equals("LCB")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 lcb.setImageResource(id);
                 lcbCurrentPlayerDrawableName = currentPlayerDrawableName;
             }
-            if(currentPosition.equals("RCB")) {
+            if (currentPosition.equals("RCB")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 rcb.setImageResource(id);
                 rcbCurrentPlayerDrawableName = currentPlayerDrawableName;
             }
-            if(currentPosition.equals("RB")) {
+            if (currentPosition.equals("RB")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 rb.setImageResource(id);
                 rbCurrentPlayerDrawableName = currentPlayerDrawableName;
             }
-            if(currentPosition.equals("GK")) {
+            if (currentPosition.equals("GK")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 gk.setImageResource(id);
                 gkCurrentPlayerDrawableName = currentPlayerDrawableName;
             }
-
-
         }
+
+
 
 
         ///////////                  ALL ON CLICK LISTENERS             ////////////////////////
@@ -259,7 +260,7 @@ public class SinglePlayer extends AppCompatActivity {
         lcm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentPosition = "MID";
+                currentPosition = "LCM";
                 Intent myIntent = new Intent(SinglePlayer.this, SinglePick.class);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
@@ -282,7 +283,7 @@ public class SinglePlayer extends AppCompatActivity {
         cam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentPosition = "MID";
+                currentPosition = "CAM";
                 Intent myIntent = new Intent(SinglePlayer.this, SinglePick.class);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
@@ -305,7 +306,7 @@ public class SinglePlayer extends AppCompatActivity {
         rcm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentPosition = "MID";
+                currentPosition = "RCM";
                 Intent myIntent = new Intent(SinglePlayer.this, SinglePick.class);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
@@ -351,7 +352,7 @@ public class SinglePlayer extends AppCompatActivity {
         lcb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentPosition = "CB";
+                currentPosition = "LCB";
                 Intent myIntent = new Intent(SinglePlayer.this, SinglePick.class);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
@@ -374,7 +375,7 @@ public class SinglePlayer extends AppCompatActivity {
         rcb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentPosition = "CB";
+                currentPosition = "RCB";
                 Intent myIntent = new Intent(SinglePlayer.this, SinglePick.class);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);

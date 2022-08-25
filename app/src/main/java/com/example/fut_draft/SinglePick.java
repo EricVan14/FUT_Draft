@@ -34,6 +34,8 @@ public class SinglePick extends AppCompatActivity {
     public String fourthPlayerDrawableName;
     public String fifthPlayerDrawableName;
 
+    public String position;
+
     public Context c;
     public Integer id;
 
@@ -63,8 +65,54 @@ public class SinglePick extends AppCompatActivity {
 
 
         ///////////           RANDOMLY SELECT 5 PLAYERS IN THIS POSITION       ////////////////////////
+        ArrayList<String> alreadyPicked = new ArrayList<>();
+        alreadyPicked.add(lwCurrentPlayerDrawableName);
+        alreadyPicked.add(stCurrentPlayerDrawableName);
+        alreadyPicked.add(rwCurrentPlayerDrawableName);
+        alreadyPicked.add(rcmCurrentPlayerDrawableName);
+        alreadyPicked.add(camCurrentPlayerDrawableName);
+        alreadyPicked.add(lcmCurrentPlayerDrawableName);
+        alreadyPicked.add(lbCurrentPlayerDrawableName);
+        alreadyPicked.add(lcbCurrentPlayerDrawableName);
+        alreadyPicked.add(rcbCurrentPlayerDrawableName);
+        alreadyPicked.add(rbCurrentPlayerDrawableName);
+        alreadyPicked.add(gkCurrentPlayerDrawableName);
 
-        ArrayList<String> drawableNamesArrayList = MainActivity.db.findDrawableNamesFromPosition(currentPosition);
+        if(currentPosition.equals("LW")){
+            position = "LW";
+        }
+        if(currentPosition.equals("ST")){
+            position = "ST";
+        }
+        if(currentPosition.equals("RW")){
+            position = "RW";
+        }
+        if(currentPosition.equals("LCM")){
+            position = "MID";
+        }
+        if(currentPosition.equals("CAM")){
+            position = "MID";
+        }
+        if(currentPosition.equals("RCM")){
+            position = "MID";
+        }
+        if(currentPosition.equals("LB")){
+            position = "LB";
+        }
+        if(currentPosition.equals("LCB")){
+            position = "CB";
+        }
+        if(currentPosition.equals("RCB")){
+            position = "CB";
+        }
+        if(currentPosition.equals("RB")){
+            position = "RB";
+        }
+        if(currentPosition.equals("GK")){
+            position = "GK";
+        }
+
+        ArrayList<String> drawableNamesArrayList = MainActivity.db.findDrawableNamesFromPosition(position, alreadyPicked);
 
         firstPlayerDrawableName = drawableNamesArrayList.get(0);
         secondPlayerDrawableName = drawableNamesArrayList.get(1);
