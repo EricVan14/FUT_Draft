@@ -259,7 +259,7 @@ public class SinglePlayer extends AppCompatActivity {
         lcm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentPosition = "LCM";
+                currentPosition = "MID";
                 Intent myIntent = new Intent(SinglePlayer.this, SinglePick.class);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
@@ -282,7 +282,7 @@ public class SinglePlayer extends AppCompatActivity {
         cam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentPosition = "CAM";
+                currentPosition = "MID";
                 Intent myIntent = new Intent(SinglePlayer.this, SinglePick.class);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
@@ -305,7 +305,7 @@ public class SinglePlayer extends AppCompatActivity {
         rcm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentPosition = "RCM";
+                currentPosition = "MID";
                 Intent myIntent = new Intent(SinglePlayer.this, SinglePick.class);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
@@ -351,7 +351,7 @@ public class SinglePlayer extends AppCompatActivity {
         lcb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentPosition = "LCB";
+                currentPosition = "CB";
                 Intent myIntent = new Intent(SinglePlayer.this, SinglePick.class);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
@@ -374,7 +374,7 @@ public class SinglePlayer extends AppCompatActivity {
         rcb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentPosition = "RCB";
+                currentPosition = "CB";
                 Intent myIntent = new Intent(SinglePlayer.this, SinglePick.class);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);

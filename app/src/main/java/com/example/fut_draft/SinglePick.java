@@ -2,11 +2,14 @@ package com.example.fut_draft;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class SinglePick extends AppCompatActivity {
 
@@ -31,6 +34,9 @@ public class SinglePick extends AppCompatActivity {
     public String fourthPlayerDrawableName;
     public String fifthPlayerDrawableName;
 
+    public Context c;
+    public Integer id;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,52 +59,36 @@ public class SinglePick extends AppCompatActivity {
         third = findViewById(R.id.playerCard3);
         fourth = findViewById(R.id.playerCard4);
         fifth = findViewById(R.id.playerCard5);
+        c = getApplicationContext();
+
 
         ///////////           RANDOMLY SELECT 5 PLAYERS IN THIS POSITION       ////////////////////////
 
-        if(currentPosition.equals("LW")){
+        ArrayList<String> drawableNamesArrayList = MainActivity.db.findDrawableNamesFromPosition(currentPosition);
 
-        }
+        firstPlayerDrawableName = drawableNamesArrayList.get(0);
+        secondPlayerDrawableName = drawableNamesArrayList.get(1);
+        thirdPlayerDrawableName = drawableNamesArrayList.get(2);
+        fourthPlayerDrawableName = drawableNamesArrayList.get(3);
+        fifthPlayerDrawableName = drawableNamesArrayList.get(4);
 
-        if(currentPosition.equals("ST")){
+        ///////////           SET ALL PLAYER IMAGES                   ////////////////////////
 
-        }
 
-        if(currentPosition.equals("RW")){
+        id = c.getResources().getIdentifier("drawable/" + firstPlayerDrawableName, null, c.getPackageName());
+        first.setImageResource(id);
+        id = c.getResources().getIdentifier("drawable/" + secondPlayerDrawableName, null, c.getPackageName());
+        second.setImageResource(id);
+        id = c.getResources().getIdentifier("drawable/" + thirdPlayerDrawableName, null, c.getPackageName());
+        third.setImageResource(id);
+        id = c.getResources().getIdentifier("drawable/" + fourthPlayerDrawableName, null, c.getPackageName());
+        fourth.setImageResource(id);
+        id = c.getResources().getIdentifier("drawable/" + fifthPlayerDrawableName, null, c.getPackageName());
+        fifth.setImageResource(id);
 
-        }
 
-        if(currentPosition.equals("LCM")){
 
-        }
 
-        if(currentPosition.equals("CAM")){
-
-        }
-
-        if(currentPosition.equals("RCM")){
-
-        }
-
-        if(currentPosition.equals("LB")){
-
-        }
-
-        if(currentPosition.equals("LCB")){
-
-        }
-
-        if(currentPosition.equals("RCB")){
-
-        }
-
-        if(currentPosition.equals("RB")){
-
-        }
-
-        if(currentPosition.equals("GK")){
-
-        }
 
         first.setOnClickListener(new View.OnClickListener() {
             @Override
