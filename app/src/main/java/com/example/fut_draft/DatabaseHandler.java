@@ -98,6 +98,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.addPlayer("albrighton", "RW", "Leicester_City", "England", "Premier_league", "Marc Albrighton");
         this.addPlayer("alex_sandro", "LB", "Juventus", "Brazil", "SERIE_A", "Alex Sandro");
         this.addPlayer("alex_telles", "LB", "Manchester_United", "Brazil", "Premier_league", "Alex Telles");
+        this.addPlayer("alexander_arnold", "RB", "Liverpool", "England", "Premier_league", "Trent Alexander-Arnold");
+        this.addPlayer("alisson", "GK", "Liverpool", "Brazil", "Premier_league", "Alisson Becker");
+        this.addPlayer("allan", "MID", "Everton", "Brazil", "Premier_league", "Allan");
+        this.addPlayer("alli", "MID", "Everton", "England", "Premier_league", "Dele Alli");
+        this.addPlayer("almiron", "MID", "Newcastle", "Paraguay", "Premier_league", "Miguel Almiron");
+        this.addPlayer("alvarez", "ST", "Manchester_City", "Argentina", "Premier_league", "Julian Alvarez");
+        this.addPlayer("amrabat", "MID", "Fiorentina", "Morocco", "SERIE_A", "Sofyan Amrabat");
+        this.addPlayer("andersen", "CB", "Crystal_Palace", "Denmark", "Premier_league", "Joachim Andersen");
+        this.addPlayer("andre_gomes", "MID", "Everton", "Portugal", "Premier_league", "Andre Gomes");
 
 
     }
@@ -125,7 +134,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          First Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            first = this.getRandomNumber(0,5);
+            first = this.getRandomNumber(0,9);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(first)){
                 foundPlayer = cursor.getString(0);
@@ -142,7 +151,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Second Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            second = this.getRandomNumber(0,5);
+            second = this.getRandomNumber(0,9);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(second)){
                 foundPlayer = cursor.getString(0);
@@ -160,7 +169,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Third Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            third = this.getRandomNumber(0,5);
+            third = this.getRandomNumber(0,9);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(third)){
                 foundPlayer = cursor.getString(0);
@@ -176,7 +185,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Fourth Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            fourth = this.getRandomNumber(0,5);
+            fourth = this.getRandomNumber(0,9);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(fourth)){
                 foundPlayer = cursor.getString(0);
@@ -193,7 +202,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Fifth Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            fifth = this.getRandomNumber(0,5);
+            fifth = this.getRandomNumber(0,9);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(fifth)){
                 foundPlayer = cursor.getString(0);
