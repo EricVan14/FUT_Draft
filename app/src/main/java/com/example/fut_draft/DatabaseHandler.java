@@ -84,29 +84,42 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public void addDefaults() {
         //Add preset players to the database
-        this.addPlayer("abdoulaye_doucoure", "MID", "Everton", "France", "Premier_league", "Abdoulaye Doucoure");
-        this.addPlayer("abraham", "ST", "Roma", "England", "SERIE_A", "Tammy Abraham");
-        this.addPlayer("acerbi", "CB", "Lazio", "Italy", "SERIE_A", "Francesco Acerbi");
-        this.addPlayer("adam_armstrong", "ST", "Southampton", "England", "Premier_league", "Adam Armstrong");
-        this.addPlayer("adama_traore", "RW", "Wolverhampton_Wanderers", "Spain", "Premier_league", "Adama Traore");
+        this.addPlayer("abdoulaye_doucoure", "MID", "Everton", "France", "Premier League", "Abdoulaye Doucoure");
+        this.addPlayer("abraham", "ST", "Roma", "England", "SERIE A", "Tammy Abraham");
+        this.addPlayer("acerbi", "CB", "Lazio", "Italy", "SERIE A", "Francesco Acerbi");
+        this.addPlayer("adam_armstrong", "ST", "Southampton", "England", "Premier League", "Adam Armstrong");
+        this.addPlayer("adama_traore", "RW", "Wolverhampton Wanderers", "Spain", "Premier League", "Adama Traore");
         this.addPlayer("adli", "MID", "Milan", "France", "SERIE_A", "Yacine Adli");
-        this.addPlayer("aebischer", "MID", "Bologna", "Switzerland", "SERIE_A", "Michel Aebischer");
-        this.addPlayer("aguerd", "CB", "West_Ham", "Morocco", "Premier_league", "Naif Aguerd");
-        this.addPlayer("ajer", "CB", "Brentford", "Norway", "Premier_league", "kristoffer Ajer");
-        this.addPlayer("ake", "CB", "Manchester_City", "Netherlands", "Premier_league", "Nathan Ake");
-        this.addPlayer("akpa_akpro", "MID", "Lazio", "Ivory_Coast", "SERIE_A", "Jean-Daniel Akpa Akpro");
-        this.addPlayer("albrighton", "RW", "Leicester_City", "England", "Premier_league", "Marc Albrighton");
-        this.addPlayer("alex_sandro", "LB", "Juventus", "Brazil", "SERIE_A", "Alex Sandro");
-        this.addPlayer("alex_telles", "LB", "Manchester_United", "Brazil", "Premier_league", "Alex Telles");
-        this.addPlayer("alexander_arnold", "RB", "Liverpool", "England", "Premier_league", "Trent Alexander-Arnold");
-        this.addPlayer("alisson", "GK", "Liverpool", "Brazil", "Premier_league", "Alisson Becker");
-        this.addPlayer("allan", "MID", "Everton", "Brazil", "Premier_league", "Allan");
-        this.addPlayer("alli", "MID", "Everton", "England", "Premier_league", "Dele Alli");
-        this.addPlayer("almiron", "MID", "Newcastle", "Paraguay", "Premier_league", "Miguel Almiron");
-        this.addPlayer("alvarez", "ST", "Manchester_City", "Argentina", "Premier_league", "Julian Alvarez");
-        this.addPlayer("amrabat", "MID", "Fiorentina", "Morocco", "SERIE_A", "Sofyan Amrabat");
-        this.addPlayer("andersen", "CB", "Crystal_Palace", "Denmark", "Premier_league", "Joachim Andersen");
-        this.addPlayer("andre_gomes", "MID", "Everton", "Portugal", "Premier_league", "Andre Gomes");
+        this.addPlayer("aebischer", "MID", "Bologna", "Switzerland", "SERIE A", "Michel Aebischer");
+        this.addPlayer("aguerd", "CB", "West Ham", "Morocco", "Premier League", "Naif Aguerd");
+        this.addPlayer("ajer", "CB", "Brentford", "Norway", "Premier League", "kristoffer Ajer");
+        this.addPlayer("ake", "CB", "Manchester City", "Netherlands", "Premier League", "Nathan Ake");
+        this.addPlayer("akpa_akpro", "MID", "Lazio", "Ivory_Coast", "SERIE A", "Jean-Daniel Akpa Akpro");
+        this.addPlayer("albrighton", "RW", "Leicester City", "England", "Premier League", "Marc Albrighton");
+        this.addPlayer("alex_sandro", "LB", "Juventus", "Brazil", "SERIE A", "Alex Sandro");
+        this.addPlayer("alex_telles", "LB", "Manchester United", "Brazil", "Premier League", "Alex Telles");
+        this.addPlayer("alexander_arnold", "RB", "Liverpool", "England", "Premier League", "Trent Alexander-Arnold");
+        this.addPlayer("alisson", "GK", "Liverpool", "Brazil", "Premier League", "Alisson Becker");
+        this.addPlayer("allan", "MID", "Everton", "Brazil", "Premier League", "Allan");
+        this.addPlayer("alli", "MID", "Everton", "England", "Premier League", "Dele Alli");
+        this.addPlayer("almiron", "MID", "Newcastle", "Paraguay", "Premier League", "Miguel Almiron");
+        this.addPlayer("alvarez", "ST", "Manchester City", "Argentina", "Premier League", "Julian Alvarez");
+        this.addPlayer("amrabat", "MID", "Fiorentina", "Morocco", "SERIE A", "Sofyan Amrabat");
+        this.addPlayer("andersen", "CB", "Crystal Palace", "Denmark", "Premier League", "Joachim Andersen");
+        this.addPlayer("andre_gomes", "MID", "Everton", "Portugal", "Premier League", "Andre Gomes");
+        this.addPlayer("antonio", "ST", "West Ham", "Jamaica", "Premier League", "Michail Antonio");
+        this.addPlayer("areola", "GK", "West Ham", "France", "Premier League", "Alphonse Areola");
+        this.addPlayer("armstrong", "RW", "Southampton", "Scotland", "Premier League", "Stuart Armstrong");
+        this.addPlayer("arnautovic", "ST", "Bologna", "Austria", "SERIE A", "Marko Arnautovic");
+        this.addPlayer("arthur", "MID", "Juventus", "Brazil", "SERIE A", "Arthur");
+        this.addPlayer("arthur_cabral", "ST", "Fiorentina", "Brazil", "SERIE A", "Arthur Cabral");
+        this.addPlayer("audero", "GK", "Sampdoria", "Italy", "SERIE A", "Emil Audero");
+        this.addPlayer("augustinsson", "LB", "Aston Villa", "Sweden", "Premier League", "Ludwig Augustinsson");
+        this.addPlayer("ayew", "ST", "Crystal Palace", "Ghana", "Premier League", "Jordan Ayew");
+        this.addPlayer("ayhan", "CB", "Sassuolo", "Turkey", "SERIE A", "Kaan Ayhan");
+        this.addPlayer("ayling", "RB", "Leeds United", "England", "Premier League", "Luke Ayling");
+        this.addPlayer("ayoze_perez", "RW", "Leicester City", "Spain", "Premier League", "Ayoze Perez");
+        this.addPlayer("azpilicueta", "CB", "Chelsea", "Spain", "Premier League", "Cesar Azpilicueta");
 
 
     }
