@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String PLAYER_TABLE_NAME = "players"; //Table name
     protected Button singlePlayer, splitScreen;
     public static DatabaseHandler db;
     @Override

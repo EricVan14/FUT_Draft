@@ -128,6 +128,25 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.addPlayer("barella", "MID", "Inter Milan", "Italy", "SERIE A", "Nicolo Barella");
         this.addPlayer("barkley", "MID", "Chelsea", "England", "Premier League", "Ross Barkley");
         this.addPlayer("barnes", "LW", "Leicester City", "England", "Premier League", "Harvey Barnes");
+        this.addPlayer("barrow", "MID", "Bologna", "Gambia", "SERIE A", "Musa Barrow");
+        this.addPlayer("bastoni", "CB", "Inter Milan", "Italy", "SERIE A", "Alessandro Bastoni");
+        this.addPlayer("batshuayi", "ST", "Chelsea", "Belgium", "Premier League", "Michy Batshuayi");
+        this.addPlayer("bednarek", "CB", "Southampton", "Poland", "Premier League", "Jan Bednarek");
+        this.addPlayer("begovic", "GK", "Everton", "Bosnia and Herzegovina", "Premier League", "Asmir Begovic");
+        this.addPlayer("ben_davies", "LB", "Tottenham", "Wales", "Premier League", "Ben Davies");
+        this.addPlayer("bennacer", "MID", "Milan", "Algeria", "SERIE A", "Ismael Bennacer");
+        this.addPlayer("benrahma", "MID", "West Ham", "Algeria", "Premier League", "Said Benrahma");
+        this.addPlayer("bentancur", "MID", "Tottenham", "Uruguay", "Premier League", "Rodrigo Bentancur");
+        this.addPlayer("benteke", "ST", "Crystal Palace", "Belgium", "Premier League", "Christian Benteke");
+        this.addPlayer("berardi", "RW", "Sassuolo", "Italy", "SERIE A", "Domenico Berardi");
+        this.addPlayer("berisha", "GK", "Torino", "Albania", "SERIE A", "Etrit Berisha");
+        this.addPlayer("bernardo_silva", "MID", "Manchester City", "Portugal", "Premier League", "Bernardo Silva");
+        this.addPlayer("bertrand", "LB", "Leicester City", "England", "Premier League", "Ryan Bertrand");
+        this.addPlayer("biraghi", "LB", "Fiorentina", "Italy", "SERIE A", "Cristiano Biraghi");
+        this.addPlayer("bissouma", "MID", "Tottenham", "Mali", "Premier League", "Yves Bissouma");
+        this.addPlayer("boga", "LW", "Atalanta", "Ivory Coast", "SERIE A", "Jeremie Boga");
+        this.addPlayer("boly", "CB", "Wolverhampton Wanderers", "Ivory Coast", "Premier League", "Willy Boly");
+
 
 
 
@@ -151,39 +170,48 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         String query = "SELECT " + PLAYER_COL_DRAWABLE_NAME + " FROM " + PLAYER_TABLE_NAME + " WHERE " + PLAYER_COL_POSITION + " = \"" + position + "\"";
         //String query = "SELECT " + PLAYER_COL_DRAWABLE_NAME + " FROM " + PLAYER_TABLE_NAME;
         ArrayList<String> drawableNamesArrayList = new ArrayList<>();
+        ArrayList<String> alreadyShowing = new ArrayList<>();
         String foundPlayer = null;
 
         ////////////////          First Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            first = this.getRandomNumber(0,9);
+            first = this.getRandomNumber(0,15);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(first)){
                 foundPlayer = cursor.getString(0);
                 if(alreadyPicked.contains(foundPlayer)){
                     foundPlayer = null;
                 }
-            }
-            cursor.close();
-        }
-        drawableNamesArrayList.add(foundPlayer);
-        foundPlayer = null;
-
-
-        ////////////////          Second Player is selected        ////////////////////////
-
-        while(foundPlayer == null) {
-            second = this.getRandomNumber(0,9);
-            Cursor cursor = db.rawQuery(query, null);
-            if(cursor.moveToPosition(second)){
-                foundPlayer = cursor.getString(0);
-                if(alreadyPicked.contains(foundPlayer)){
+                if(alreadyShowing.contains(foundPlayer)){
                     foundPlayer = null;
                 }
             }
             cursor.close();
         }
         drawableNamesArrayList.add(foundPlayer);
+        alreadyShowing.add(foundPlayer);
+        foundPlayer = null;
+
+
+        ////////////////          Second Player is selected        ////////////////////////
+
+        while(foundPlayer == null) {
+            second = this.getRandomNumber(0,15);
+            Cursor cursor = db.rawQuery(query, null);
+            if(cursor.moveToPosition(second)){
+                foundPlayer = cursor.getString(0);
+                if(alreadyPicked.contains(foundPlayer)){
+                    foundPlayer = null;
+                }
+                if(alreadyShowing.contains(foundPlayer)){
+                    foundPlayer = null;
+                }
+            }
+            cursor.close();
+        }
+        drawableNamesArrayList.add(foundPlayer);
+        alreadyShowing.add(foundPlayer);
         foundPlayer = null;
 
 
@@ -191,50 +219,62 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Third Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            third = this.getRandomNumber(0,9);
+            third = this.getRandomNumber(0,15);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(third)){
                 foundPlayer = cursor.getString(0);
                 if(alreadyPicked.contains(foundPlayer)){
                     foundPlayer = null;
                 }
+                if(alreadyShowing.contains(foundPlayer)){
+                    foundPlayer = null;
+                }
             }
             cursor.close();
         }
         drawableNamesArrayList.add(foundPlayer);
+        alreadyShowing.add(foundPlayer);
         foundPlayer = null;
 
         ////////////////          Fourth Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            fourth = this.getRandomNumber(0,9);
+            fourth = this.getRandomNumber(0,15);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(fourth)){
                 foundPlayer = cursor.getString(0);
                 if(alreadyPicked.contains(foundPlayer)){
                     foundPlayer = null;
                 }
-            }
-            cursor.close();
-        }
-        drawableNamesArrayList.add(foundPlayer);
-        foundPlayer = null;
-
-
-        ////////////////          Fifth Player is selected        ////////////////////////
-
-        while(foundPlayer == null) {
-            fifth = this.getRandomNumber(0,9);
-            Cursor cursor = db.rawQuery(query, null);
-            if(cursor.moveToPosition(fifth)){
-                foundPlayer = cursor.getString(0);
-                if(alreadyPicked.contains(foundPlayer)){
+                if(alreadyShowing.contains(foundPlayer)){
                     foundPlayer = null;
                 }
             }
             cursor.close();
         }
         drawableNamesArrayList.add(foundPlayer);
+        alreadyShowing.add(foundPlayer);
+        foundPlayer = null;
+
+
+        ////////////////          Fifth Player is selected        ////////////////////////
+
+        while(foundPlayer == null) {
+            fifth = this.getRandomNumber(0,15);
+            Cursor cursor = db.rawQuery(query, null);
+            if(cursor.moveToPosition(fifth)){
+                foundPlayer = cursor.getString(0);
+                if(alreadyPicked.contains(foundPlayer)){
+                    foundPlayer = null;
+                }
+                if(alreadyShowing.contains(foundPlayer)){
+                    foundPlayer = null;
+                }
+            }
+            cursor.close();
+        }
+        drawableNamesArrayList.add(foundPlayer);
+        alreadyShowing.add(foundPlayer);
 
         return drawableNamesArrayList;
     }
