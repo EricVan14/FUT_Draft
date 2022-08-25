@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class SinglePick extends AppCompatActivity {
     public String currentPosition;
     public String currentPlayerDrawableName;
     public ImageView first, second, third, fourth, fifth;
+    public TextView name1, name2, name3, name4, name5, club1, club2, club3, club4, club5, league1, league2, league3, league4, league5, nation1, nation2, nation3, nation4, nation5;
     public String lwCurrentPlayerDrawableName;
     public String stCurrentPlayerDrawableName;
     public String rwCurrentPlayerDrawableName;
@@ -33,6 +35,30 @@ public class SinglePick extends AppCompatActivity {
     public String thirdPlayerDrawableName;
     public String fourthPlayerDrawableName;
     public String fifthPlayerDrawableName;
+
+    public String firstPlayerName;
+    public String secondPlayerName;
+    public String thirdPlayerName;
+    public String fourthPlayerName;
+    public String fifthPlayerName;
+
+    public String firstPlayerClub;
+    public String secondPlayerClub;
+    public String thirdPlayerClub;
+    public String fourthPlayerClub;
+    public String fifthPlayerClub;
+
+    public String firstPlayerLeague;
+    public String secondPlayerLeague;
+    public String thirdPlayerLeague;
+    public String fourthPlayerLeague;
+    public String fifthPlayerLeague;
+
+    public String firstPlayerNation;
+    public String secondPlayerNation;
+    public String thirdPlayerNation;
+    public String fourthPlayerNation;
+    public String fifthPlayerNation;
 
     public String position;
 
@@ -61,6 +87,33 @@ public class SinglePick extends AppCompatActivity {
         third = findViewById(R.id.playerCard3);
         fourth = findViewById(R.id.playerCard4);
         fifth = findViewById(R.id.playerCard5);
+
+        name1 = findViewById(R.id.player1Name);
+        name2 = findViewById(R.id.player2Name);
+        name3 = findViewById(R.id.player3Name);
+        name4 = findViewById(R.id.player4Name);
+        name5 = findViewById(R.id.player5Name);
+
+        club1 = findViewById(R.id.playerClub1);
+        club2 = findViewById(R.id.playerClub2);
+        club3 = findViewById(R.id.playerClub3);
+        club4 = findViewById(R.id.playerClub4);
+        club5 = findViewById(R.id.playerClub5);
+
+        league1 = findViewById(R.id.playerLeague1);
+        league2 = findViewById(R.id.playerLeague2);
+        league3 = findViewById(R.id.playerLeague3);
+        league4 = findViewById(R.id.playerLeague4);
+        league5 = findViewById(R.id.playerLeague5);
+
+        nation1 = findViewById(R.id.playerNation1);
+        nation2 = findViewById(R.id.playerNation2);
+        nation3 = findViewById(R.id.playerNation3);
+        nation4 = findViewById(R.id.playerNation4);
+        nation5 = findViewById(R.id.playerNation5);
+
+
+
         c = getApplicationContext();
 
 
@@ -120,6 +173,32 @@ public class SinglePick extends AppCompatActivity {
         fourthPlayerDrawableName = drawableNamesArrayList.get(3);
         fifthPlayerDrawableName = drawableNamesArrayList.get(4);
 
+        firstPlayerName = MainActivity.db.getNameFromDrawable(firstPlayerDrawableName);
+        secondPlayerName = MainActivity.db.getNameFromDrawable(secondPlayerDrawableName);
+        thirdPlayerName = MainActivity.db.getNameFromDrawable(thirdPlayerDrawableName);
+        fourthPlayerName = MainActivity.db.getNameFromDrawable(fourthPlayerDrawableName);
+        fifthPlayerName = MainActivity.db.getNameFromDrawable(fifthPlayerDrawableName);
+
+        firstPlayerClub = MainActivity.db.getClubFromDrawable(firstPlayerDrawableName);
+        secondPlayerClub = MainActivity.db.getClubFromDrawable(secondPlayerDrawableName);
+        thirdPlayerClub = MainActivity.db.getClubFromDrawable(thirdPlayerDrawableName);
+        fourthPlayerClub = MainActivity.db.getClubFromDrawable(fourthPlayerDrawableName);
+        fifthPlayerClub = MainActivity.db.getClubFromDrawable(fifthPlayerDrawableName);
+
+        firstPlayerLeague = MainActivity.db.getLeagueFromDrawable(firstPlayerDrawableName);
+        secondPlayerLeague = MainActivity.db.getLeagueFromDrawable(secondPlayerDrawableName);
+        thirdPlayerLeague = MainActivity.db.getLeagueFromDrawable(thirdPlayerDrawableName);
+        fourthPlayerLeague = MainActivity.db.getLeagueFromDrawable(fourthPlayerDrawableName);
+        fifthPlayerLeague = MainActivity.db.getLeagueFromDrawable(fifthPlayerDrawableName);
+
+        firstPlayerNation = MainActivity.db.getNationFromDrawable(firstPlayerDrawableName);
+        secondPlayerNation = MainActivity.db.getNationFromDrawable(secondPlayerDrawableName);
+        thirdPlayerNation = MainActivity.db.getNationFromDrawable(thirdPlayerDrawableName);
+        fourthPlayerNation = MainActivity.db.getNationFromDrawable(fourthPlayerDrawableName);
+        fifthPlayerNation = MainActivity.db.getNationFromDrawable(fifthPlayerDrawableName);
+
+
+
         ///////////           SET ALL PLAYER IMAGES                   ////////////////////////
 
 
@@ -135,6 +214,32 @@ public class SinglePick extends AppCompatActivity {
         fifth.setImageResource(id);
 
 
+
+
+        ///////////           SET ALL PLAYER INFO                   ////////////////////////
+        name1.setText(firstPlayerName);
+        name2.setText(secondPlayerName);
+        name3.setText(thirdPlayerName);
+        name4.setText(fourthPlayerName);
+        name5.setText(fifthPlayerName);
+
+        club1.setText(firstPlayerClub);
+        club2.setText(secondPlayerClub);
+        club3.setText(thirdPlayerClub);
+        club4.setText(fourthPlayerClub);
+        club5.setText(fifthPlayerClub);
+
+        league1.setText(firstPlayerLeague);
+        league2.setText(secondPlayerLeague);
+        league3.setText(thirdPlayerLeague);
+        league4.setText(fourthPlayerLeague);
+        league5.setText(fifthPlayerLeague);
+
+        nation1.setText(firstPlayerNation);
+        nation2.setText(secondPlayerNation);
+        nation3.setText(thirdPlayerNation);
+        nation4.setText(fourthPlayerNation);
+        nation5.setText(fifthPlayerNation);
 
 
 

@@ -89,7 +89,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.addPlayer("acerbi", "CB", "Lazio", "Italy", "SERIE A", "Francesco Acerbi");
         this.addPlayer("adam_armstrong", "ST", "Southampton", "England", "Premier League", "Adam Armstrong");
         this.addPlayer("adama_traore", "RW", "Wolverhampton Wanderers", "Spain", "Premier League", "Adama Traore");
-        this.addPlayer("adli", "MID", "Milan", "France", "SERIE_A", "Yacine Adli");
+        this.addPlayer("adli", "MID", "Milan", "France", "SERIE A", "Yacine Adli");
         this.addPlayer("aebischer", "MID", "Bologna", "Switzerland", "SERIE A", "Michel Aebischer");
         this.addPlayer("aguerd", "CB", "West Ham", "Morocco", "Premier League", "Naif Aguerd");
         this.addPlayer("ajer", "CB", "Brentford", "Norway", "Premier League", "kristoffer Ajer");
@@ -120,6 +120,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.addPlayer("ayling", "RB", "Leeds United", "England", "Premier League", "Luke Ayling");
         this.addPlayer("ayoze_perez", "RW", "Leicester City", "Spain", "Premier League", "Ayoze Perez");
         this.addPlayer("azpilicueta", "CB", "Chelsea", "Spain", "Premier League", "Cesar Azpilicueta");
+        this.addPlayer("bailey", "RW", "Aston Villa", "Jamiaca", "Premier League", "Leon Bailey");
+        this.addPlayer("bailly", "CB", "Manchester United", "Ivory Coast", "Premier League", "Eric Bailly");
+        this.addPlayer("bakayoko", "MID", "Milan", "France", "SERIE A", "Tiemoue Bakayoko");
+        this.addPlayer("bamford", "ST", "Leeds United", "England", "Premier League", "Patrick Bamford");
+        this.addPlayer("barak", "MID", "Hellas Verona", "Czech Republic", "SERIE A", "Antonin Barak");
+        this.addPlayer("barella", "MID", "Inter Milan", "Italy", "SERIE A", "Nicolo Barella");
+        this.addPlayer("barkley", "MID", "Chelsea", "England", "Premier League", "Ross Barkley");
+        this.addPlayer("barnes", "LW", "Leicester City", "England", "Premier League", "Harvey Barnes");
+
 
 
     }
@@ -233,6 +242,69 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public int getRandomNumber(int min, int max) {
         return (int) ((Math.random() * (max - min)) + min);
     }
+
+    public String getNameFromDrawable(String drawableName){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT " + PLAYER_COL_FULL_NAME + " FROM " + PLAYER_TABLE_NAME + " WHERE " + PLAYER_COL_DRAWABLE_NAME + " = \"" + drawableName + "\"";
+        String foundPlayer = null;
+        Cursor cursor = db.rawQuery(query, null);
+        if(cursor.moveToFirst()){
+            foundPlayer = cursor.getString(0);
+
+        }
+        cursor.close();
+
+        return foundPlayer;
+
+    }
+
+    public String getClubFromDrawable(String drawableName){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT " + PLAYER_COL_CLUB + " FROM " + PLAYER_TABLE_NAME + " WHERE " + PLAYER_COL_DRAWABLE_NAME + " = \"" + drawableName + "\"";
+        String foundPlayer = null;
+        Cursor cursor = db.rawQuery(query, null);
+        if(cursor.moveToFirst()){
+            foundPlayer = cursor.getString(0);
+
+        }
+        cursor.close();
+
+        return foundPlayer;
+
+    }
+
+    public String getLeagueFromDrawable(String drawableName){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT " + PLAYER_COL_LEAGUE + " FROM " + PLAYER_TABLE_NAME + " WHERE " + PLAYER_COL_DRAWABLE_NAME + " = \"" + drawableName + "\"";
+        String foundPlayer = null;
+        Cursor cursor = db.rawQuery(query, null);
+        if(cursor.moveToFirst()){
+            foundPlayer = cursor.getString(0);
+
+        }
+        cursor.close();
+
+        return foundPlayer;
+
+    }
+
+    public String getNationFromDrawable(String drawableName){
+        SQLiteDatabase db = this.getReadableDatabase();
+        //SELECT "drawableName" FROM "players" WHERE "position" = position
+        String query = "SELECT " + PLAYER_COL_COUNTRY + " FROM " + PLAYER_TABLE_NAME + " WHERE " + PLAYER_COL_DRAWABLE_NAME + " = \"" + drawableName + "\"";
+        String foundPlayer = null;
+        Cursor cursor = db.rawQuery(query, null);
+        if(cursor.moveToFirst()){
+            foundPlayer = cursor.getString(0);
+
+        }
+        cursor.close();
+
+        return foundPlayer;
+
+    }
+
+
 
 
 }
