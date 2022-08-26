@@ -187,6 +187,38 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.addPlayer("cooper", "CB", "Leeds United", "Scotland", "Premier League", "Liam Cooper");
         this.addPlayer("correa", "ST", "Inter Milan", "Argentina", "SERIE A", "Joaquin Correa");
         this.addPlayer("coufal", "RB", "West Ham", "Czech Republic", "Premier League", "Vladimir Coufal");
+        this.addPlayer("coutinho", "MID", "Aston Villa", "Brazil", "Premier League", "Philippe Coutinho");
+        this.addPlayer("cragno", "GK", "Monza", "Italy", "SERIE A", "Alessio Cragno");
+        this.addPlayer("cresswell", "LB", "West Ham", "England", "Premier League", "Aaron Cresswell");
+        this.addPlayer("cristante", "MID", "Roma", "Italy", "SERIE A", "Bryan Cristante");
+        this.addPlayer("cristiano_ronaldo", "ST", "Manchester United", "Portugal", "Premier League", "Cristiano Ronaldo");
+        this.addPlayer("cuadrado", "RB", "Juventus", "Columbia", "SERIE A", "Juan Cuadrado");
+        this.addPlayer("cucurella", "LW", "Brighton", "Spain", "Premier League", "Marc Cucurella");
+        this.addPlayer("d_ambrosio", "CB", "Inter Milan", "Italy", "SERIE A", "Danilo D'Ambrosio");
+        this.addPlayer("daka", "ST", "Leicester City", "Zambia", "Premier League", "Patson Daka");
+        this.addPlayer("dallas", "LB", "Leeds United", "Northern Ireland", "Premier League", "Stuart Dallas");
+        this.addPlayer("daniel_james", "RW", "Leeds United", "Wales", "Premier League", "Daniel James");
+        this.addPlayer("daniel_podence", "LW", "Wolverhampton Wanderers", "Portugal", "Premier League", "Daniel Podence");
+        this.addPlayer("danilo", "RB", "Juventus", "Brazil", "SERIE A", "Danilo");
+        this.addPlayer("darlow", "GK", "Newcastle", "England", "Premier League", "Karl Darlow");
+        this.addPlayer("darmian", "RB", "Inter Milan", "Italy", "SERIE A", "Matteo Darmian");
+        this.addPlayer("dawidowicz", "CB", "Hellas Verona", "Poland", "SERIE A", "Pawel Dwidowicz");
+        this.addPlayer("dawson", "CB", "West Ham", "England", "Premier League", "Craig Dawson");
+        this.addPlayer("de_bruyne", "MID", "Manchester City", "Belgium", "Premier League", "Kevin De Bruyne");
+        this.addPlayer("de_gea", "GK", "Manchester United", "Spain", "Premier League", "David De Gea");
+        this.addPlayer("de_ketelaere", "LW", "Milan", "Belgium", "SERIE A", "Charles De Ketelaere");
+        this.addPlayer("de_roon", "MID", "Atalanta", "Netherlands", "SERIE A", "Marten De Roon");
+        this.addPlayer("de_sciglio", "RB", "Juventus", "Italy", "SERIE A", "Mattia De Sciglio");
+        this.addPlayer("de_silvestri", "RB", "Bologna", "Italy", "SERIE A", "Lorenzo De Silvestri");
+        this.addPlayer("de_vrij", "CB", "Inter Milan", "Netherlands", "SERIE A", "Stefan De Vrij");
+        this.addPlayer("dean_henderson", "GK", "Nottingham Forrest", "England", "Premier League", "Dean Henderson");
+        this.addPlayer("defrel", "MID", "Sassuolo", "France", "SERIE A", "Gregoire Defrel");
+        this.addPlayer("demiral", "CB", "Atalanta", "Turkey", "SERIE A", "Merih Demiral");
+        this.addPlayer("demme", "MID", "Napoli", "Germany", "SERIE A", "Diego Demme");
+        this.addPlayer("dendoncker", "MID", "Wolverhampton Wanderers", "Belgium", "Premier League", "Leander Dendoncker");
+        this.addPlayer("deulofeu", "LW", "Udinese", "Spain", "SERIE A", "Gerard Deulofeu");
+
+
 
 
 
