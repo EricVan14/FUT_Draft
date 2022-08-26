@@ -94,7 +94,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.addPlayer("aguerd", "CB", "West Ham", "Morocco", "Premier League", "Naif Aguerd");
         this.addPlayer("ajer", "CB", "Brentford", "Norway", "Premier League", "kristoffer Ajer");
         this.addPlayer("ake", "CB", "Manchester City", "Netherlands", "Premier League", "Nathan Ake");
-        this.addPlayer("akpa_akpro", "MID", "Lazio", "Ivory_Coast", "SERIE A", "Jean-Daniel Akpa Akpro");
+        this.addPlayer("akpa_akpro", "MID", "Lazio", "Ivory Coast", "SERIE A", "Jean-Daniel Akpa Akpro");
         this.addPlayer("albrighton", "RW", "Leicester City", "England", "Premier League", "Marc Albrighton");
         this.addPlayer("alex_sandro", "LB", "Juventus", "Brazil", "SERIE A", "Alex Sandro");
         this.addPlayer("alex_telles", "LB", "Manchester United", "Brazil", "Premier League", "Alex Telles");
@@ -120,7 +120,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.addPlayer("ayling", "RB", "Leeds United", "England", "Premier League", "Luke Ayling");
         this.addPlayer("ayoze_perez", "RW", "Leicester City", "Spain", "Premier League", "Ayoze Perez");
         this.addPlayer("azpilicueta", "CB", "Chelsea", "Spain", "Premier League", "Cesar Azpilicueta");
-        this.addPlayer("bailey", "RW", "Aston Villa", "Jamiaca", "Premier League", "Leon Bailey");
+        this.addPlayer("bailey", "RW", "Aston Villa", "Jamaica", "Premier League", "Leon Bailey");
         this.addPlayer("bailly", "CB", "Manchester United", "Ivory Coast", "Premier League", "Eric Bailly");
         this.addPlayer("bakayoko", "MID", "Milan", "France", "SERIE A", "Tiemoue Bakayoko");
         this.addPlayer("bamford", "ST", "Leeds United", "England", "Premier League", "Patrick Bamford");
@@ -146,7 +146,47 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.addPlayer("bissouma", "MID", "Tottenham", "Mali", "Premier League", "Yves Bissouma");
         this.addPlayer("boga", "LW", "Atalanta", "Ivory Coast", "SERIE A", "Jeremie Boga");
         this.addPlayer("boly", "CB", "Wolverhampton Wanderers", "Ivory Coast", "Premier League", "Willy Boly");
-
+        this.addPlayer("bonaventura", "MID", "Fiorentina", "Italy", "SERIE A", "Giacomo Bonaventura");
+        this.addPlayer("bonucci", "CB", "Juventus", "Italy", "SERIE A", "Leonardo Bonucci");
+        this.addPlayer("botman", "CB", "Newcastle", "Netherlands", "Premier League", "Sven Botman");
+        this.addPlayer("bowen", "RW", "West Ham", "England", "Premier League", "Jarrod Bowen");
+        this.addPlayer("bradaric", "LB", "Salernitana", "Croatia", "SERIE A", "Domagoj Bradaric");
+        this.addPlayer("bremer", "CB", "Juventus", "Brazil", "SERIE A", "Gleison Bremer");
+        this.addPlayer("bronn", "CB", "Salernitana", "Tunisia", "SERIE A", "Dylan Bronn");
+        this.addPlayer("brooks", "RW", "Bournemouth", "Wales", "Premier League", "David Brooks");
+        this.addPlayer("brozovic", "MID", "Inter Milan", "Croatia", "SERIE A", "Marcelo Brozovic");
+        this.addPlayer("bruno_fernandes", "MID", "Manchester United", "Portugal", "Premier League", "Bruno Fernandes");
+        this.addPlayer("bruno_guimaraes", "MID", "Newcastle", "Brazil", "Premier League", "Bruno Guimaraes");
+        this.addPlayer("bryan_gil", "LW", "Tottenham", "Spain", "Premier League", "Bryan Gil");
+        this.addPlayer("buendia", "RW", "Aston Villa", "Argentina", "Premier League", "Emiliano Buendia");
+        this.addPlayer("burn", "CB", "Newcastle", "England", "Premier League", "Daniel Burn");
+        this.addPlayer("cairney", "MID", "Fulham", "Scotland", "Premier League", "Tom Cairney");
+        this.addPlayer("calabria", "RB", "Milan", "Italy", "SERIE A", "Davide Calabria");
+        this.addPlayer("caldara", "CB", "Spezia", "Italy", "SERIE A", "Mattia Caldara");
+        this.addPlayer("calhanoglu", "MID", "Inter Milan", "Turkey", "SERIE A", "Hakan Calhanoglu");
+        this.addPlayer("callum_wilson", "ST", "Newcastle", "England", "Premier League", "Callum Wilson");
+        this.addPlayer("calvert_lewin", "ST", "Everton", "England", "Premier League", "Dominic Calvert-Lewin");
+        this.addPlayer("candreva", "RW", "Salernitana", "Italy", "SERIE A", "Antonio Candreva");
+        this.addPlayer("caprari", "ST", "Monza", "Italy", "SERIE A", "Gianluca Caprari");
+        this.addPlayer("caputo", "ST", "Sampdoria", "Italy", "SERIE A", "Francesco Caputo");
+        this.addPlayer("cash", "RB", "Aston Villa", "England", "Premier League", "Matty cash");
+        this.addPlayer("castagne", "RB", "Leicester City", "Belgium", "Premier League", "Timothy Castagne");
+        this.addPlayer("castrovilli", "MID", "Fiorentina", "Italy", "SERIE A", "Gaetano Castrovilli");
+        this.addPlayer("cedric", "RB", "Arsenal", "Portugal", "Premier League", "Cedric Soares");
+        this.addPlayer("celik", "RB", "Roma", "Turkey", "SERIE A", "Mehmet Zeki Celik");
+        this.addPlayer("chambers", "RB", "Aston Villa", "England", "Premier League", "Callum Chambers");
+        this.addPlayer("che_adams", "ST", "Southampton", "Scotland", "Premier League", "Che Adams");
+        this.addPlayer("chiesa", "RW", "Juventus", "Italy", "SERIE A", "Federico Chiesa");
+        this.addPlayer("chilwell", "LB", "Chelsea", "England", "Premier League", "Ben Chilwell");
+        this.addPlayer("clyne", "RB", "Crystal Palace", "England", "Premier League", "Nathaniel Clyne");
+        this.addPlayer("coady", "CB", "Wolverhampton Wanderers", "England", "Premier League", "Conor Coady");
+        this.addPlayer("coleman", "RB", "Everton", "Ireland", "Premier League", "Seamus Coleman");
+        this.addPlayer("consigli", "GK", "Sassuolo", "Italy", "SERIE A", "Andrea Consigli");
+        this.addPlayer("conti", "RB", "Sampdoria", "Italy", "SERIE A", "Andrea Conti");
+        this.addPlayer("cook", "MID", "Bournemouth", "England", "Premier League", "Lewis Cook");
+        this.addPlayer("cooper", "CB", "Leeds United", "Scotland", "Premier League", "Liam Cooper");
+        this.addPlayer("correa", "ST", "Inter Milan", "Argentina", "SERIE A", "Joaquin Correa");
+        this.addPlayer("coufal", "RB", "West Ham", "Czech Republic", "Premier League", "Vladimir Coufal");
 
 
 
@@ -176,7 +216,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          First Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            first = this.getRandomNumber(0,15);
+            first = this.getRandomNumber(0,50);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(first)){
                 foundPlayer = cursor.getString(0);
@@ -197,7 +237,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Second Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            second = this.getRandomNumber(0,15);
+            second = this.getRandomNumber(0,50);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(second)){
                 foundPlayer = cursor.getString(0);
@@ -219,7 +259,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Third Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            third = this.getRandomNumber(0,15);
+            third = this.getRandomNumber(0,50);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(third)){
                 foundPlayer = cursor.getString(0);
@@ -239,7 +279,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Fourth Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            fourth = this.getRandomNumber(0,15);
+            fourth = this.getRandomNumber(0,50);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(fourth)){
                 foundPlayer = cursor.getString(0);
@@ -260,7 +300,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ////////////////          Fifth Player is selected        ////////////////////////
 
         while(foundPlayer == null) {
-            fifth = this.getRandomNumber(0,15);
+            fifth = this.getRandomNumber(0,50);
             Cursor cursor = db.rawQuery(query, null);
             if(cursor.moveToPosition(fifth)){
                 foundPlayer = cursor.getString(0);
