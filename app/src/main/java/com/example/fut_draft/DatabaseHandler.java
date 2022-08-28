@@ -416,6 +416,35 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     }
 
+    public String getLinkBetweenPlayers(String drawableName1, String drawableName2){
+        String nation1 = this.getNationFromDrawable(drawableName1);
+        String nation2 = this.getNationFromDrawable(drawableName2);
+        String league1 = this.getLeagueFromDrawable(drawableName1);
+        String league2 = this.getLeagueFromDrawable(drawableName2);
+        String club1 = this.getClubFromDrawable(drawableName1);
+        String club2 = this.getClubFromDrawable(drawableName2);
+
+
+
+        if(league1.equals(league2)){
+            if(nation1.equals(nation2)){
+                if(club1.equals(club2)){
+                    return "GREEN2";
+                }
+                return "GREEN";
+            }
+            if(club1.equals(club2)){
+                return "GREEN1";
+            }
+            return "YELLOW";
+        }
+        if(nation1.equals(nation2)){
+            return "YELLOW";
+        }
+        return "RED";
+
+    }
+
 
 
 

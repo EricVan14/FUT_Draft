@@ -11,6 +11,7 @@ import android.widget.ImageView;
 public class SinglePlayer extends AppCompatActivity {
 
     public ImageView lw, st, rw, lcm, cam, rcm, lb, lcb, rcb, rb, gk;
+    public ImageView lwTost, rwTost, rcmTorw, lcmTolw, camTost, rcmTocam, lcmTocam, lbTolcm, rbTorcm, rcbTorb, lcbTolb, lcbTorcb, gkTolcb, gkTorcb;
     public String currentPosition;
     public String currentPlayerDrawableName;
     public String lwCurrentPlayerDrawableName;
@@ -26,6 +27,29 @@ public class SinglePlayer extends AppCompatActivity {
     public String gkCurrentPlayerDrawableName;
     public Context c;
     public Integer id;
+
+    public String lwtostLink;
+    public String rwtostLink;
+    public String lcmtolwLink;
+    public String rcmtorwLink;
+    public String camtostLink;
+    public String lcmtocamLink;
+    public String rcmtocamLink;
+    public String lbtolcmLink;
+    public String rbtorcmLink;
+    public String lcbtolbLink;
+    public String lcbtorcbLink;
+    public String rcbtorbLink;
+    public String gktolcbLink;
+    public String gktorcbLink;
+
+
+
+
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +67,22 @@ public class SinglePlayer extends AppCompatActivity {
         rcb = findViewById(R.id.RCB);
         rb = findViewById(R.id.RB);
         gk = findViewById(R.id.GK);
+
+        lwTost = findViewById(R.id.lwTost);
+        rwTost = findViewById(R.id.rwTost);
+        rcmTorw = findViewById(R.id.rcmTorw);
+        lcmTolw = findViewById(R.id.lcmTolw);
+        camTost = findViewById(R.id.camTost);
+        rcmTocam = findViewById(R.id.rcmTocam);
+        lcmTocam = findViewById(R.id.lcmTocam);
+        lbTolcm = findViewById(R.id.lbTolcm);
+        rbTorcm = findViewById(R.id.rbTorcm);
+        rcbTorb = findViewById(R.id.rcbTorb);
+        lcbTolb = findViewById(R.id.lcbTolb);
+        lcbTorcb = findViewById(R.id.lcbTorcb);
+        gkTolcb = findViewById(R.id.gkTolcb);
+        gkTorcb = findViewById(R.id.gkTorcb);
+
         c = getApplicationContext();
 
 
@@ -182,6 +222,220 @@ public class SinglePlayer extends AppCompatActivity {
             }
         }
 
+        //////////////////             SETTING UP ALL LINKS           ///////////////////////////////////
+
+
+        if((lwCurrentPlayerDrawableName != null) && (stCurrentPlayerDrawableName != null)){
+            lwtostLink = MainActivity.db.getLinkBetweenPlayers(lwCurrentPlayerDrawableName,stCurrentPlayerDrawableName);
+            if(lwtostLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                lwTost.setImageResource(id);
+            }
+            if(lwtostLink.equals("GREEN") || lwtostLink.equals("GREEN1") || lwtostLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                lwTost.setImageResource(id);
+            }if(lwtostLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                lwTost.setImageResource(id);
+            }
+
+
+        }
+
+        if((rwCurrentPlayerDrawableName != null) && (stCurrentPlayerDrawableName != null)){
+            rwtostLink = MainActivity.db.getLinkBetweenPlayers(rwCurrentPlayerDrawableName,stCurrentPlayerDrawableName);
+            if(rwtostLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                rwTost.setImageResource(id);
+            }
+            if(rwtostLink.equals("GREEN") || rwtostLink.equals("GREEN1") || rwtostLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                rwTost.setImageResource(id);
+            }if(rwtostLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                rwTost.setImageResource(id);
+            }
+        }
+
+        if((lwCurrentPlayerDrawableName != null) && (lcmCurrentPlayerDrawableName != null)){
+            lcmtolwLink = MainActivity.db.getLinkBetweenPlayers(lwCurrentPlayerDrawableName,lcmCurrentPlayerDrawableName);
+            if(lcmtolwLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                lcmTolw.setImageResource(id);
+            }
+            if(lcmtolwLink.equals("GREEN") || lcmtolwLink.equals("GREEN1") || lcmtolwLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                lcmTolw.setImageResource(id);
+            }if(lcmtolwLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                lcmTolw.setImageResource(id);
+            }
+        }
+
+        if((rwCurrentPlayerDrawableName != null) && (rcmCurrentPlayerDrawableName != null)){
+            rcmtorwLink = MainActivity.db.getLinkBetweenPlayers(rwCurrentPlayerDrawableName,rcmCurrentPlayerDrawableName);
+            if(rcmtorwLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                rcmTorw.setImageResource(id);
+            }
+            if(rcmtorwLink.equals("GREEN") || rcmtorwLink.equals("GREEN1") || rcmtorwLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                rcmTorw.setImageResource(id);
+            }if(rcmtorwLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                rcmTorw.setImageResource(id);
+            }
+        }
+
+        if((camCurrentPlayerDrawableName != null) && (stCurrentPlayerDrawableName != null)){
+            camtostLink = MainActivity.db.getLinkBetweenPlayers(camCurrentPlayerDrawableName,stCurrentPlayerDrawableName);
+            if(camtostLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                camTost.setImageResource(id);
+            }
+            if(camtostLink.equals("GREEN") || camtostLink.equals("GREEN1") || camtostLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                camTost.setImageResource(id);
+            }if(camtostLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                camTost.setImageResource(id);
+            }
+        }
+
+        if((camCurrentPlayerDrawableName != null) && (lcmCurrentPlayerDrawableName != null)){
+            lcmtocamLink = MainActivity.db.getLinkBetweenPlayers(camCurrentPlayerDrawableName,lcmCurrentPlayerDrawableName);
+            if(lcmtocamLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                lcmTocam.setImageResource(id);
+            }
+            if(lcmtocamLink.equals("GREEN") || lcmtocamLink.equals("GREEN1") || lcmtocamLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                lcmTocam.setImageResource(id);
+            }if(lcmtocamLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                lcmTocam.setImageResource(id);
+            }
+        }
+
+        if((camCurrentPlayerDrawableName != null) && (rcmCurrentPlayerDrawableName != null)){
+            rcmtocamLink = MainActivity.db.getLinkBetweenPlayers(camCurrentPlayerDrawableName,rcmCurrentPlayerDrawableName);
+            if(rcmtocamLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                rcmTocam.setImageResource(id);
+            }
+            if(rcmtocamLink.equals("GREEN") || rcmtocamLink.equals("GREEN1") || rcmtocamLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                rcmTocam.setImageResource(id);
+            }if(rcmtocamLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                rcmTocam.setImageResource(id);
+            }
+        }
+
+        if((lbCurrentPlayerDrawableName != null) && (lcmCurrentPlayerDrawableName != null)){
+            lbtolcmLink = MainActivity.db.getLinkBetweenPlayers(lbCurrentPlayerDrawableName,lcmCurrentPlayerDrawableName);
+            if(lbtolcmLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                lbTolcm.setImageResource(id);
+            }
+            if(lbtolcmLink.equals("GREEN") || lbtolcmLink.equals("GREEN1") || lbtolcmLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                lbTolcm.setImageResource(id);
+            }if(lbtolcmLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                lbTolcm.setImageResource(id);
+            }
+        }
+
+        if((rbCurrentPlayerDrawableName != null) && (rcmCurrentPlayerDrawableName != null)){
+            rbtorcmLink = MainActivity.db.getLinkBetweenPlayers(rbCurrentPlayerDrawableName,rcmCurrentPlayerDrawableName);
+            if(rbtorcmLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                rbTorcm.setImageResource(id);
+            }
+            if(rbtorcmLink.equals("GREEN") || rbtorcmLink.equals("GREEN1") || rbtorcmLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                rbTorcm.setImageResource(id);
+            }if(rbtorcmLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                rbTorcm.setImageResource(id);
+            }
+        }
+
+        if((lcbCurrentPlayerDrawableName != null) && (lbCurrentPlayerDrawableName != null)){
+            lcbtolbLink = MainActivity.db.getLinkBetweenPlayers(lcbCurrentPlayerDrawableName,lbCurrentPlayerDrawableName);
+            if(lcbtolbLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                lcbTolb.setImageResource(id);
+            }
+            if(lcbtolbLink.equals("GREEN") || lcbtolbLink.equals("GREEN1") || lcbtolbLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                lcbTolb.setImageResource(id);
+            }if(lcbtolbLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                lcbTolb.setImageResource(id);
+            }
+        }
+
+        if((lcbCurrentPlayerDrawableName != null) && (rcbCurrentPlayerDrawableName != null)){
+            lcbtorcbLink = MainActivity.db.getLinkBetweenPlayers(lcbCurrentPlayerDrawableName,rcbCurrentPlayerDrawableName);
+            if(lcbtorcbLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                lcbTorcb.setImageResource(id);
+            }
+            if(lcbtorcbLink.equals("GREEN") || lcbtorcbLink.equals("GREEN1") || lcbtorcbLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                lcbTorcb.setImageResource(id);
+            }if(lcbtorcbLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                lcbTorcb.setImageResource(id);
+            }
+        }
+
+        if((rcbCurrentPlayerDrawableName != null) && (rbCurrentPlayerDrawableName != null)){
+            rcbtorbLink = MainActivity.db.getLinkBetweenPlayers(rcbCurrentPlayerDrawableName,rbCurrentPlayerDrawableName);
+            if(rcbtorbLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                rcbTorb.setImageResource(id);
+            }
+            if(rcbtorbLink.equals("GREEN") || rcbtorbLink.equals("GREEN1") || rcbtorbLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                rcbTorb.setImageResource(id);
+            }if(rcbtorbLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                rcbTorb.setImageResource(id);
+            }
+        }
+
+        if((gkCurrentPlayerDrawableName != null) && (lcbCurrentPlayerDrawableName != null)){
+            gktolcbLink = MainActivity.db.getLinkBetweenPlayers(gkCurrentPlayerDrawableName,lcbCurrentPlayerDrawableName);
+            if(gktolcbLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                gkTolcb.setImageResource(id);
+            }
+            if(gktolcbLink.equals("GREEN") || gktolcbLink.equals("GREEN1") || gktolcbLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                gkTolcb.setImageResource(id);
+            }if(gktolcbLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                gkTolcb.setImageResource(id);
+            }
+        }
+
+        if((gkCurrentPlayerDrawableName != null) && (rcbCurrentPlayerDrawableName != null)){
+            gktorcbLink = MainActivity.db.getLinkBetweenPlayers(gkCurrentPlayerDrawableName,rcbCurrentPlayerDrawableName);
+            if(gktorcbLink.equals("RED")){
+                id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
+                gkTorcb.setImageResource(id);
+            }
+            if(gktorcbLink.equals("GREEN") || gktorcbLink.equals("GREEN1") || gktorcbLink.equals("GREEN2")){
+                id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
+                gkTorcb.setImageResource(id);
+            }if(gktorcbLink.equals("YELLOW")){
+                id = c.getResources().getIdentifier("drawable/" + "yellow_bar", null, c.getPackageName());
+                gkTorcb.setImageResource(id);
+            }
+        }
 
 
 
