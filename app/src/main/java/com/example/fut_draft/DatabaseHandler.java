@@ -428,13 +428,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         if(league1.equals(league2)){
             if(nation1.equals(nation2)){
-                if(club1.equals(club2)){
-                    return "GREEN2";
-                }
                 return "GREEN";
             }
             if(club1.equals(club2)){
-                return "GREEN1";
+                return "GREEN";
             }
             return "YELLOW";
         }

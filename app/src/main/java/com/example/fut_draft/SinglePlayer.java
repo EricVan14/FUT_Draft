@@ -7,10 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class SinglePlayer extends AppCompatActivity {
 
     public ImageView lw, st, rw, lcm, cam, rcm, lb, lcb, rcb, rb, gk;
+    public Integer lwChem, stChem, rwChem, lcmChem, camChem, rcmChem, lbChem, lcbChem, rcbChem, rbChem, gkChem, totalChem;
     public ImageView lwTost, rwTost, rcmTorw, lcmTolw, camTost, rcmTocam, lcmTocam, lbTolcm, rbTorcm, rcbTorb, lcbTolb, lcbTorcb, gkTolcb, gkTorcb;
     public String currentPosition;
     public String currentPlayerDrawableName;
@@ -27,6 +29,7 @@ public class SinglePlayer extends AppCompatActivity {
     public String gkCurrentPlayerDrawableName;
     public Context c;
     public Integer id;
+    public String str;
 
     public String lwtostLink;
     public String rwtostLink;
@@ -42,6 +45,9 @@ public class SinglePlayer extends AppCompatActivity {
     public String rcbtorbLink;
     public String gktolcbLink;
     public String gktorcbLink;
+
+    public TextView ratingValue, chemValue;
+
 
 
 
@@ -82,6 +88,9 @@ public class SinglePlayer extends AppCompatActivity {
         lcbTorcb = findViewById(R.id.lcbTorcb);
         gkTolcb = findViewById(R.id.gkTolcb);
         gkTorcb = findViewById(R.id.gkTorcb);
+
+        ratingValue = findViewById(R.id.rating_value);
+        chemValue = findViewById(R.id.chem_value);
 
         c = getApplicationContext();
 
@@ -231,7 +240,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 lwTost.setImageResource(id);
             }
-            if(lwtostLink.equals("GREEN") || lwtostLink.equals("GREEN1") || lwtostLink.equals("GREEN2")){
+            if(lwtostLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 lwTost.setImageResource(id);
             }if(lwtostLink.equals("YELLOW")){
@@ -248,7 +257,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 rwTost.setImageResource(id);
             }
-            if(rwtostLink.equals("GREEN") || rwtostLink.equals("GREEN1") || rwtostLink.equals("GREEN2")){
+            if(rwtostLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 rwTost.setImageResource(id);
             }if(rwtostLink.equals("YELLOW")){
@@ -263,7 +272,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 lcmTolw.setImageResource(id);
             }
-            if(lcmtolwLink.equals("GREEN") || lcmtolwLink.equals("GREEN1") || lcmtolwLink.equals("GREEN2")){
+            if(lcmtolwLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 lcmTolw.setImageResource(id);
             }if(lcmtolwLink.equals("YELLOW")){
@@ -278,7 +287,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 rcmTorw.setImageResource(id);
             }
-            if(rcmtorwLink.equals("GREEN") || rcmtorwLink.equals("GREEN1") || rcmtorwLink.equals("GREEN2")){
+            if(rcmtorwLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 rcmTorw.setImageResource(id);
             }if(rcmtorwLink.equals("YELLOW")){
@@ -293,7 +302,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 camTost.setImageResource(id);
             }
-            if(camtostLink.equals("GREEN") || camtostLink.equals("GREEN1") || camtostLink.equals("GREEN2")){
+            if(camtostLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 camTost.setImageResource(id);
             }if(camtostLink.equals("YELLOW")){
@@ -308,7 +317,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 lcmTocam.setImageResource(id);
             }
-            if(lcmtocamLink.equals("GREEN") || lcmtocamLink.equals("GREEN1") || lcmtocamLink.equals("GREEN2")){
+            if(lcmtocamLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 lcmTocam.setImageResource(id);
             }if(lcmtocamLink.equals("YELLOW")){
@@ -323,7 +332,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 rcmTocam.setImageResource(id);
             }
-            if(rcmtocamLink.equals("GREEN") || rcmtocamLink.equals("GREEN1") || rcmtocamLink.equals("GREEN2")){
+            if(rcmtocamLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 rcmTocam.setImageResource(id);
             }if(rcmtocamLink.equals("YELLOW")){
@@ -338,7 +347,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 lbTolcm.setImageResource(id);
             }
-            if(lbtolcmLink.equals("GREEN") || lbtolcmLink.equals("GREEN1") || lbtolcmLink.equals("GREEN2")){
+            if(lbtolcmLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 lbTolcm.setImageResource(id);
             }if(lbtolcmLink.equals("YELLOW")){
@@ -353,7 +362,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 rbTorcm.setImageResource(id);
             }
-            if(rbtorcmLink.equals("GREEN") || rbtorcmLink.equals("GREEN1") || rbtorcmLink.equals("GREEN2")){
+            if(rbtorcmLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 rbTorcm.setImageResource(id);
             }if(rbtorcmLink.equals("YELLOW")){
@@ -368,7 +377,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 lcbTolb.setImageResource(id);
             }
-            if(lcbtolbLink.equals("GREEN") || lcbtolbLink.equals("GREEN1") || lcbtolbLink.equals("GREEN2")){
+            if(lcbtolbLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 lcbTolb.setImageResource(id);
             }if(lcbtolbLink.equals("YELLOW")){
@@ -383,7 +392,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 lcbTorcb.setImageResource(id);
             }
-            if(lcbtorcbLink.equals("GREEN") || lcbtorcbLink.equals("GREEN1") || lcbtorcbLink.equals("GREEN2")){
+            if(lcbtorcbLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 lcbTorcb.setImageResource(id);
             }if(lcbtorcbLink.equals("YELLOW")){
@@ -398,7 +407,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 rcbTorb.setImageResource(id);
             }
-            if(rcbtorbLink.equals("GREEN") || rcbtorbLink.equals("GREEN1") || rcbtorbLink.equals("GREEN2")){
+            if(rcbtorbLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 rcbTorb.setImageResource(id);
             }if(rcbtorbLink.equals("YELLOW")){
@@ -413,7 +422,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 gkTolcb.setImageResource(id);
             }
-            if(gktolcbLink.equals("GREEN") || gktolcbLink.equals("GREEN1") || gktolcbLink.equals("GREEN2")){
+            if(gktolcbLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 gkTolcb.setImageResource(id);
             }if(gktolcbLink.equals("YELLOW")){
@@ -428,7 +437,7 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + "red_bar", null, c.getPackageName());
                 gkTorcb.setImageResource(id);
             }
-            if(gktorcbLink.equals("GREEN") || gktorcbLink.equals("GREEN1") || gktorcbLink.equals("GREEN2")){
+            if(gktorcbLink.equals("GREEN")){
                 id = c.getResources().getIdentifier("drawable/" + "green_bar", null, c.getPackageName());
                 gkTorcb.setImageResource(id);
             }if(gktorcbLink.equals("YELLOW")){
@@ -436,6 +445,247 @@ public class SinglePlayer extends AppCompatActivity {
                 gkTorcb.setImageResource(id);
             }
         }
+
+
+        ////////////////                  SET UP CHEM           ////////////////////////
+
+        lwChem = 0;
+        if(lwtostLink != null && lcmtolwLink != null){
+            if(lwtostLink.equals("GREEN") || lcmtolwLink.equals("GREEN")){
+                lwChem = 10;
+            }else{
+                if(lwtostLink.equals("YELLOW") && lcmtolwLink.equals("YELLOW")){
+                    lwChem = 10;
+                }else{
+                    if(lwtostLink.equals("YELLOW") || lcmtolwLink.equals("YELLOW")){
+                        lwChem = 7;
+                    }else{
+                        lwChem = 3;
+                    }
+                }
+            }
+        }
+
+        rwChem = 0;
+        if(rwtostLink != null && rcmtorwLink != null){
+            if(rwtostLink.equals("GREEN") || rcmtorwLink.equals("GREEN")){
+                rwChem = 10;
+            }else{
+                if(rwtostLink.equals("YELLOW") && rcmtorwLink.equals("YELLOW")){
+                    rwChem = 10;
+                }else{
+                    if(rwtostLink.equals("YELLOW") || rcmtorwLink.equals("YELLOW")){
+                        rwChem = 7;
+                    }else{
+                        rwChem = 3;
+                    }
+                }
+            }
+        }
+
+        stChem = 0;
+        if(rwtostLink != null && lwtostLink != null && camtostLink != null){
+            if((rwtostLink.equals("GREEN") && lwtostLink.equals("GREEN")) || (rwtostLink.equals("GREEN") && camtostLink.equals("GREEN")) || (camtostLink.equals("GREEN") && lwtostLink.equals("GREEN"))){
+                stChem = 10;
+            }
+            if(rwtostLink.equals("GREEN") || lwtostLink.equals("GREEN")  || camtostLink.equals("GREEN")){
+                if(rwtostLink.equals("YELLOW") || lwtostLink.equals("YELLOW")  || camtostLink.equals("YELLOW")){
+                    stChem = 10;
+                }
+            }
+            if(rwtostLink.equals("YELLOW") && lwtostLink.equals("YELLOW") && camtostLink.equals("YELLOW")){
+                stChem = 10;
+            }else{
+                if((rwtostLink.equals("YELLOW") && lwtostLink.equals("YELLOW")) || (rwtostLink.equals("YELLOW") && camtostLink.equals("YELLOW")) || (camtostLink.equals("YELLOW") && lwtostLink.equals("YELLOW"))){
+                    stChem = 7;
+                }else{
+                    if(rwtostLink.equals("YELLOW") || lwtostLink.equals("YELLOW")  || camtostLink.equals("YELLOW")){
+                        stChem = 3;
+                    }
+                }
+            }
+
+        }
+
+        lcmChem = 0;
+        if(lcmtolwLink != null && lcmtocamLink != null && lbtolcmLink != null){
+            if((lcmtolwLink.equals("GREEN") && lcmtocamLink.equals("GREEN")) || (lcmtolwLink.equals("GREEN") && lbtolcmLink.equals("GREEN")) || (lbtolcmLink.equals("GREEN") && lcmtocamLink.equals("GREEN"))){
+                lcmChem = 10;
+            }
+            if(lcmtolwLink.equals("GREEN") || lcmtocamLink.equals("GREEN")  || lbtolcmLink.equals("GREEN")){
+                if(lcmtolwLink.equals("YELLOW") || lcmtocamLink.equals("YELLOW")  || lbtolcmLink.equals("YELLOW")){
+                    lcmChem = 10;
+                }
+            }
+            if(lcmtolwLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW") && lbtolcmLink.equals("YELLOW")){
+                lcmChem = 10;
+            }else{
+                if((lcmtolwLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW")) || (lcmtolwLink.equals("YELLOW") && lbtolcmLink.equals("YELLOW")) || (lbtolcmLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW"))){
+                    lcmChem = 7;
+                }else{
+                    if(lcmtolwLink.equals("YELLOW") || lcmtocamLink.equals("YELLOW")  || lbtolcmLink.equals("YELLOW")){
+                        lcmChem = 3;
+                    }
+                }
+            }
+
+        }
+
+        camChem = 0;
+        if(camtostLink != null && lcmtocamLink != null && rcmtocamLink != null){
+            if((camtostLink.equals("GREEN") && lcmtocamLink.equals("GREEN")) || (camtostLink.equals("GREEN") && rcmtocamLink.equals("GREEN")) || (rcmtocamLink.equals("GREEN") && lcmtocamLink.equals("GREEN"))){
+                camChem = 10;
+            }
+            if(camtostLink.equals("GREEN") || lcmtocamLink.equals("GREEN")  || rcmtocamLink.equals("GREEN")){
+                if(camtostLink.equals("YELLOW") || lcmtocamLink.equals("YELLOW")  || rcmtocamLink.equals("YELLOW")){
+                    camChem = 10;
+                }
+            }
+            if(camtostLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")){
+                camChem = 10;
+            }else{
+                if((camtostLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW")) || (camtostLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")) || (rcmtocamLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW"))){
+                    camChem = 7;
+                }else{
+                    if(camtostLink.equals("YELLOW") || lcmtocamLink.equals("YELLOW")  || rcmtocamLink.equals("YELLOW")){
+                        camChem = 3;
+                    }
+                }
+            }
+
+        }
+
+        rcmChem = 0;
+        if(rcmtorwLink != null && rbtorcmLink != null && rcmtocamLink != null){
+            if((rcmtorwLink.equals("GREEN") && rbtorcmLink.equals("GREEN")) || (rcmtorwLink.equals("GREEN") && rcmtocamLink.equals("GREEN")) || (rcmtocamLink.equals("GREEN") && rbtorcmLink.equals("GREEN"))){
+                rcmChem = 10;
+            }
+            if(rcmtorwLink.equals("GREEN") || rbtorcmLink.equals("GREEN")  || rcmtocamLink.equals("GREEN")){
+                if(rcmtorwLink.equals("YELLOW") || rbtorcmLink.equals("YELLOW")  || rcmtocamLink.equals("YELLOW")){
+                    rcmChem = 10;
+                }
+            }
+            if(rcmtorwLink.equals("YELLOW") && rbtorcmLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")){
+                rcmChem = 10;
+            }else{
+                if((rcmtorwLink.equals("YELLOW") && rbtorcmLink.equals("YELLOW")) || (rcmtorwLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")) || (rcmtocamLink.equals("YELLOW") && rbtorcmLink.equals("YELLOW"))){
+                    rcmChem = 7;
+                }else{
+                    if(rcmtorwLink.equals("YELLOW") || rbtorcmLink.equals("YELLOW")  || rcmtocamLink.equals("YELLOW")){
+                        rcmChem = 3;
+                    }
+                }
+            }
+
+        }
+
+        lbChem = 0;
+        if(lbtolcmLink != null && lcbtolbLink != null){
+            if(lbtolcmLink.equals("GREEN") || lcbtolbLink.equals("GREEN")){
+                lbChem = 10;
+            }else{
+                if(lbtolcmLink.equals("YELLOW") && lcbtolbLink.equals("YELLOW")){
+                    lbChem = 10;
+                }else{
+                    if(lbtolcmLink.equals("YELLOW") || lcbtolbLink.equals("YELLOW")){
+                        lbChem = 7;
+                    }else{
+                        lbChem = 3;
+                    }
+                }
+            }
+        }
+
+        lcbChem = 0;
+        if(lcbtolbLink != null && lcbtorcbLink != null && gktolcbLink != null){
+            if((lcbtolbLink.equals("GREEN") && lcbtorcbLink.equals("GREEN")) || (lcbtolbLink.equals("GREEN") && gktolcbLink.equals("GREEN")) || (gktolcbLink.equals("GREEN") && lcbtorcbLink.equals("GREEN"))){
+                lcbChem = 10;
+            }
+            if(lcbtolbLink.equals("GREEN") || lcbtorcbLink.equals("GREEN")  || gktolcbLink.equals("GREEN")){
+                if(lcbtolbLink.equals("YELLOW") || lcbtorcbLink.equals("YELLOW")  || gktolcbLink.equals("YELLOW")){
+                    lcbChem = 10;
+                }
+            }
+            if(lcbtolbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW") && gktolcbLink.equals("YELLOW")){
+                lcbChem = 10;
+            }else{
+                if((lcbtolbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW")) || (lcbtolbLink.equals("YELLOW") && gktolcbLink.equals("YELLOW")) || (gktolcbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW"))){
+                    lcbChem = 7;
+                }else{
+                    if(lcbtolbLink.equals("YELLOW") || lcbtorcbLink.equals("YELLOW")  || gktolcbLink.equals("YELLOW")){
+                        lcbChem = 3;
+                    }
+                }
+            }
+
+        }
+
+        rcbChem = 0;
+        if(rcbtorbLink != null && lcbtorcbLink != null && gktorcbLink != null){
+            if((rcbtorbLink.equals("GREEN") && lcbtorcbLink.equals("GREEN")) || (rcbtorbLink.equals("GREEN") && gktorcbLink.equals("GREEN")) || (gktorcbLink.equals("GREEN") && lcbtorcbLink.equals("GREEN"))){
+                rcbChem = 10;
+            }
+            if(rcbtorbLink.equals("GREEN") || lcbtorcbLink.equals("GREEN")  || gktorcbLink.equals("GREEN")){
+                if(rcbtorbLink.equals("YELLOW") || lcbtorcbLink.equals("YELLOW")  || gktorcbLink.equals("YELLOW")){
+                    rcbChem = 10;
+                }
+            }
+            if(rcbtorbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW") && gktorcbLink.equals("YELLOW")){
+                rcbChem = 10;
+            }else{
+                if((rcbtorbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW")) || (rcbtorbLink.equals("YELLOW") && gktorcbLink.equals("YELLOW")) || (gktorcbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW"))){
+                    rcbChem = 7;
+                }else{
+                    if(rcbtorbLink.equals("YELLOW") || lcbtorcbLink.equals("YELLOW")  || gktorcbLink.equals("YELLOW")){
+                        rcbChem = 3;
+                    }
+                }
+            }
+
+        }
+
+        rbChem = 0;
+        if(rbtorcmLink != null && rcbtorbLink != null){
+            if(rbtorcmLink.equals("GREEN") || rcbtorbLink.equals("GREEN")){
+                rbChem = 10;
+            }else{
+                if(rbtorcmLink.equals("YELLOW") && rcbtorbLink.equals("YELLOW")){
+                    rbChem = 10;
+                }else{
+                    if(rbtorcmLink.equals("YELLOW") || rcbtorbLink.equals("YELLOW")){
+                        rbChem = 7;
+                    }else{
+                        rbChem = 3;
+                    }
+                }
+            }
+        }
+
+        gkChem = 0;
+        if(gktolcbLink != null && gktorcbLink != null){
+            if(gktolcbLink.equals("GREEN") || gktorcbLink.equals("GREEN")){
+                gkChem = 10;
+            }else{
+                if(gktolcbLink.equals("YELLOW") && gktorcbLink.equals("YELLOW")){
+                    gkChem = 10;
+                }else{
+                    if(gktolcbLink.equals("YELLOW") || gktorcbLink.equals("YELLOW")){
+                        gkChem = 7;
+                    }else{
+                        gkChem = 3;
+                    }
+                }
+            }
+        }
+
+        totalChem = stChem+lwChem+rwChem+lcmChem+camChem+rcmChem+lbChem+lcbChem+rcbChem+rbChem+gkChem;
+        if(totalChem >= 100){
+            chemValue.setText("100");
+        }else{
+            str = Integer.toString(totalChem);
+            chemValue.setText(str);
+        }
+
 
 
 

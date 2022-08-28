@@ -196,63 +196,6 @@
         app:layout_constraintVertical_bias="0.798"
         app:srcCompat="@drawable/grey_bar" />
 
-    <EditText
-        android:id="@+id/editTextLCB"
-        android:layout_width="57dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="CB"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
-        android:textColorLink="#5F96DA"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.364"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
-
-    <EditText
-        android:id="@+id/editTextRCB"
-        android:layout_width="57dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="CB"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
-        android:textColorLink="#5F96DA"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
-
-    <EditText
-        android:id="@+id/editTextGK"
-        android:layout_width="57dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="GK"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
-        android:textColorLink="#5F96DA"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.990" />
-
     <ImageView
         android:id="@+id/ST"
         android:layout_width="100dp"
@@ -385,7 +328,64 @@
         app:layout_constraintVertical_bias="0.32"
         app:srcCompat="@drawable/empty_card" />
 
-    <EditText
+    <TextView
+        android:id="@+id/editTextLCB"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CB"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textColorLink="#5F96DA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
+
+    <TextView
+        android:id="@+id/editTextRCB"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CB"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textColorLink="#5F96DA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
+
+    <TextView
+        android:id="@+id/editTextGK"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="GK"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textColorLink="#5F96DA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.990" />
+
+    <TextView
         android:id="@+id/editTextRB"
         android:layout_width="57dp"
         android:layout_height="53dp"
@@ -404,7 +404,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.762" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextLB"
         android:layout_width="57dp"
         android:layout_height="53dp"
@@ -423,7 +423,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.762" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextLCM"
         android:layout_width="57dp"
         android:layout_height="53dp"
@@ -442,7 +442,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.485" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextCM"
         android:layout_width="57dp"
         android:layout_height="53dp"
@@ -461,7 +461,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.46" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextRCM"
         android:layout_width="57dp"
         android:layout_height="53dp"
@@ -480,7 +480,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.485" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextRW"
         android:layout_width="57dp"
         android:layout_height="53dp"
@@ -499,7 +499,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.249" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextLW"
         android:layout_width="57dp"
         android:layout_height="53dp"
@@ -518,7 +518,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.249" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextST"
         android:layout_width="57dp"
         android:layout_height="53dp"
@@ -536,5 +536,81 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.182" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:text="RATING"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#5F96DA"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84" />
+
+    <TextView
+        android:id="@+id/rating_value"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FA8B04"
+        android:textColorLink="#5F96DA"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <TextView
+        android:id="@+id/chem"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:text="CHEM"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#5F96DA"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84" />
+
+    <TextView
+        android:id="@+id/chem_value"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FA8B04"
+        android:textColorLink="#5F96DA"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
