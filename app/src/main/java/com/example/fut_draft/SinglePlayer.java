@@ -27,9 +27,23 @@ public class SinglePlayer extends AppCompatActivity {
     public String rcbCurrentPlayerDrawableName;
     public String rbCurrentPlayerDrawableName;
     public String gkCurrentPlayerDrawableName;
+    public Integer lwRating;
+    public Integer stRating;
+    public Integer rwRating;
+    public Integer lcmRating;
+    public Integer camRating;
+    public Integer rcmRating;
+    public Integer lbRating;
+    public Integer lcbRating;
+    public Integer rcbRating;
+    public Integer rbRating;
+    public Integer gkRating;
+    public Integer totalRating;
+
     public Context c;
     public Integer id;
     public String str;
+    public String stringRating;
 
     public String lwtostLink;
     public String rwtostLink;
@@ -47,15 +61,6 @@ public class SinglePlayer extends AppCompatActivity {
     public String gktorcbLink;
 
     public TextView ratingValue, chemValue;
-
-
-
-
-
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,59 +118,93 @@ public class SinglePlayer extends AppCompatActivity {
         rcbCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_RCB");
         rbCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_RB");
         gkCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_GK");
+        lwRating = 0;
+        stRating = 0;
+        rwRating = 0;
+        lcmRating = 0;
+        camRating = 0;
+        rcmRating = 0;
+        lbRating = 0;
+        lcbRating = 0;
+        rcbRating = 0;
+        rbRating = 0;
+        gkRating = 0;
+        totalRating = 0;
 
         if(lwCurrentPlayerDrawableName != null){
             id = c.getResources().getIdentifier("drawable/" + lwCurrentPlayerDrawableName, null, c.getPackageName());
+            stringRating = MainActivity.db.getRatingFromDrawable(lwCurrentPlayerDrawableName);
+            lwRating = Integer.parseInt(stringRating);
             lw.setImageResource(id);
         }
 
         if(stCurrentPlayerDrawableName != null){
             id = c.getResources().getIdentifier("drawable/" + stCurrentPlayerDrawableName, null, c.getPackageName());
+            stringRating = MainActivity.db.getRatingFromDrawable(stCurrentPlayerDrawableName);
+            stRating = Integer.parseInt(stringRating);
             st.setImageResource(id);
         }
 
         if(rwCurrentPlayerDrawableName != null){
             id = c.getResources().getIdentifier("drawable/" + rwCurrentPlayerDrawableName, null, c.getPackageName());
+            stringRating = MainActivity.db.getRatingFromDrawable(rwCurrentPlayerDrawableName);
+            rwRating = Integer.parseInt(stringRating);
             rw.setImageResource(id);
         }
 
         if(lcmCurrentPlayerDrawableName != null){
             id = c.getResources().getIdentifier("drawable/" + lcmCurrentPlayerDrawableName, null, c.getPackageName());
+            stringRating = MainActivity.db.getRatingFromDrawable(lcmCurrentPlayerDrawableName);
+            lcmRating = Integer.parseInt(stringRating);
             lcm.setImageResource(id);
         }
 
         if(camCurrentPlayerDrawableName != null){
             id = c.getResources().getIdentifier("drawable/" + camCurrentPlayerDrawableName, null, c.getPackageName());
+            stringRating = MainActivity.db.getRatingFromDrawable(camCurrentPlayerDrawableName);
+            camRating = Integer.parseInt(stringRating);
             cam.setImageResource(id);
         }
 
         if(rcmCurrentPlayerDrawableName != null){
             id = c.getResources().getIdentifier("drawable/" + rcmCurrentPlayerDrawableName, null, c.getPackageName());
+            stringRating = MainActivity.db.getRatingFromDrawable(rcmCurrentPlayerDrawableName);
+            rcmRating = Integer.parseInt(stringRating);
             rcm.setImageResource(id);
         }
 
         if(lbCurrentPlayerDrawableName != null){
             id = c.getResources().getIdentifier("drawable/" + lbCurrentPlayerDrawableName, null, c.getPackageName());
+            stringRating = MainActivity.db.getRatingFromDrawable(lbCurrentPlayerDrawableName);
+            lbRating = Integer.parseInt(stringRating);
             lb.setImageResource(id);
         }
 
         if(lcbCurrentPlayerDrawableName != null){
             id = c.getResources().getIdentifier("drawable/" + lcbCurrentPlayerDrawableName, null, c.getPackageName());
+            stringRating = MainActivity.db.getRatingFromDrawable(lcbCurrentPlayerDrawableName);
+            lcbRating = Integer.parseInt(stringRating);
             lcb.setImageResource(id);
         }
 
         if(rcbCurrentPlayerDrawableName != null){
             id = c.getResources().getIdentifier("drawable/" + rcbCurrentPlayerDrawableName, null, c.getPackageName());
+            stringRating = MainActivity.db.getRatingFromDrawable(rcbCurrentPlayerDrawableName);
+            rcbRating = Integer.parseInt(stringRating);
             rcb.setImageResource(id);
         }
 
         if(rbCurrentPlayerDrawableName != null){
             id = c.getResources().getIdentifier("drawable/" + rbCurrentPlayerDrawableName, null, c.getPackageName());
+            stringRating = MainActivity.db.getRatingFromDrawable(rbCurrentPlayerDrawableName);
+            rbRating = Integer.parseInt(stringRating);
             rb.setImageResource(id);
         }
 
         if(gkCurrentPlayerDrawableName != null){
             id = c.getResources().getIdentifier("drawable/" + gkCurrentPlayerDrawableName, null, c.getPackageName());
+            stringRating = MainActivity.db.getRatingFromDrawable(gkCurrentPlayerDrawableName);
+            gkRating = Integer.parseInt(stringRating);
             gk.setImageResource(id);
         }
 
@@ -178,56 +217,78 @@ public class SinglePlayer extends AppCompatActivity {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 lw.setImageResource(id);
                 lwCurrentPlayerDrawableName = currentPlayerDrawableName;
+                stringRating = MainActivity.db.getRatingFromDrawable(lwCurrentPlayerDrawableName);
+                lwRating = Integer.parseInt(stringRating);
             }
             if (currentPosition.equals("ST")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 st.setImageResource(id);
                 stCurrentPlayerDrawableName = currentPlayerDrawableName;
+                stringRating = MainActivity.db.getRatingFromDrawable(stCurrentPlayerDrawableName);
+                stRating = Integer.parseInt(stringRating);
             }
             if (currentPosition.equals("RW")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 rw.setImageResource(id);
                 rwCurrentPlayerDrawableName = currentPlayerDrawableName;
+                stringRating = MainActivity.db.getRatingFromDrawable(rwCurrentPlayerDrawableName);
+                rwRating = Integer.parseInt(stringRating);
             }
             if (currentPosition.equals("LCM")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 lcm.setImageResource(id);
                 lcmCurrentPlayerDrawableName = currentPlayerDrawableName;
+                stringRating = MainActivity.db.getRatingFromDrawable(lcmCurrentPlayerDrawableName);
+                lcmRating = Integer.parseInt(stringRating);
             }
             if (currentPosition.equals("CAM")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 cam.setImageResource(id);
                 camCurrentPlayerDrawableName = currentPlayerDrawableName;
+                stringRating = MainActivity.db.getRatingFromDrawable(camCurrentPlayerDrawableName);
+                camRating = Integer.parseInt(stringRating);
             }
             if (currentPosition.equals("RCM")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 rcm.setImageResource(id);
                 rcmCurrentPlayerDrawableName = currentPlayerDrawableName;
+                stringRating = MainActivity.db.getRatingFromDrawable(rcmCurrentPlayerDrawableName);
+                rcmRating = Integer.parseInt(stringRating);
             }
             if (currentPosition.equals("LB")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 lb.setImageResource(id);
                 lbCurrentPlayerDrawableName = currentPlayerDrawableName;
+                stringRating = MainActivity.db.getRatingFromDrawable(lbCurrentPlayerDrawableName);
+                lbRating = Integer.parseInt(stringRating);
             }
             if (currentPosition.equals("LCB")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 lcb.setImageResource(id);
                 lcbCurrentPlayerDrawableName = currentPlayerDrawableName;
+                stringRating = MainActivity.db.getRatingFromDrawable(lcbCurrentPlayerDrawableName);
+                lcbRating = Integer.parseInt(stringRating);
             }
             if (currentPosition.equals("RCB")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 rcb.setImageResource(id);
                 rcbCurrentPlayerDrawableName = currentPlayerDrawableName;
+                stringRating = MainActivity.db.getRatingFromDrawable(rcbCurrentPlayerDrawableName);
+                rcbRating = Integer.parseInt(stringRating);
             }
             if (currentPosition.equals("RB")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 rb.setImageResource(id);
                 rbCurrentPlayerDrawableName = currentPlayerDrawableName;
+                stringRating = MainActivity.db.getRatingFromDrawable(rbCurrentPlayerDrawableName);
+                rbRating = Integer.parseInt(stringRating);
             }
             if (currentPosition.equals("GK")) {
                 id = c.getResources().getIdentifier("drawable/" + currentPlayerDrawableName, null, c.getPackageName());
                 gk.setImageResource(id);
                 gkCurrentPlayerDrawableName = currentPlayerDrawableName;
+                stringRating = MainActivity.db.getRatingFromDrawable(gkCurrentPlayerDrawableName);
+                gkRating = Integer.parseInt(stringRating);
             }
         }
 
@@ -686,7 +747,11 @@ public class SinglePlayer extends AppCompatActivity {
             chemValue.setText(str);
         }
 
+        /////////////////              SET UP RATING                 ////////////////////////////
 
+        totalRating = (gkRating + rbRating + rcbRating + lcbRating + lbRating + rcmRating + camRating + lcmRating + rwRating + stRating + lwRating)/11;
+        str = Integer.toString(totalRating);
+        ratingValue.setText(str);
 
 
         ///////////                  ALL ON CLICK LISTENERS             ////////////////////////

@@ -18,6 +18,7 @@ public class SinglePick extends AppCompatActivity {
     public String currentPlayerDrawableName;
     public ImageView first, second, third, fourth, fifth;
     public TextView name1, name2, name3, name4, name5, club1, club2, club3, club4, club5, league1, league2, league3, league4, league5, nation1, nation2, nation3, nation4, nation5;
+    public TextView rating1, rating2, rating3, rating4, rating5, position1, position2, position3, position4, position5;
     public String lwCurrentPlayerDrawableName;
     public String stCurrentPlayerDrawableName;
     public String rwCurrentPlayerDrawableName;
@@ -60,6 +61,18 @@ public class SinglePick extends AppCompatActivity {
     public String fourthPlayerNation;
     public String fifthPlayerNation;
 
+    public String firstPlayerRating;
+    public String secondPlayerRating;
+    public String thirdPlayerRating;
+    public String fourthPlayerRating;
+    public String fifthPlayerRating;
+
+    public String firstPlayerPosition;
+    public String secondPlayerPosition;
+    public String thirdPlayerPosition;
+    public String fourthPlayerPosition;
+    public String fifthPlayerPosition;
+
     public String position;
 
     public Context c;
@@ -87,6 +100,18 @@ public class SinglePick extends AppCompatActivity {
         third = findViewById(R.id.playerCard3);
         fourth = findViewById(R.id.playerCard4);
         fifth = findViewById(R.id.playerCard5);
+
+        rating1 = findViewById(R.id.playerRating1);
+        rating2 = findViewById(R.id.playerRating2);
+        rating3 = findViewById(R.id.playerRating3);
+        rating4 = findViewById(R.id.playerRating4);
+        rating5 = findViewById(R.id.playerRating5);
+
+        position1 = findViewById(R.id.playerPosition1);
+        position2 = findViewById(R.id.playerPosition2);
+        position3 = findViewById(R.id.playerPosition3);
+        position4 = findViewById(R.id.playerPosition4);
+        position5 = findViewById(R.id.playerPosition5);
 
         name1 = findViewById(R.id.player1Name);
         name2 = findViewById(R.id.player2Name);
@@ -173,6 +198,19 @@ public class SinglePick extends AppCompatActivity {
         fourthPlayerDrawableName = drawableNamesArrayList.get(3);
         fifthPlayerDrawableName = drawableNamesArrayList.get(4);
 
+        firstPlayerRating = MainActivity.db.getRatingFromDrawable(firstPlayerDrawableName);
+        secondPlayerRating = MainActivity.db.getRatingFromDrawable(secondPlayerDrawableName);
+        thirdPlayerRating = MainActivity.db.getRatingFromDrawable(thirdPlayerDrawableName);
+        fourthPlayerRating = MainActivity.db.getRatingFromDrawable(fourthPlayerDrawableName);
+        fifthPlayerRating = MainActivity.db.getRatingFromDrawable(fifthPlayerDrawableName);
+
+
+        firstPlayerPosition = MainActivity.db.getPositionFromDrawable(firstPlayerDrawableName);
+        secondPlayerPosition = MainActivity.db.getPositionFromDrawable(secondPlayerDrawableName);
+        thirdPlayerPosition = MainActivity.db.getPositionFromDrawable(thirdPlayerDrawableName);
+        fourthPlayerPosition = MainActivity.db.getPositionFromDrawable(fourthPlayerDrawableName);
+        fifthPlayerPosition = MainActivity.db.getPositionFromDrawable(fifthPlayerDrawableName);
+
         firstPlayerName = MainActivity.db.getNameFromDrawable(firstPlayerDrawableName);
         secondPlayerName = MainActivity.db.getNameFromDrawable(secondPlayerDrawableName);
         thirdPlayerName = MainActivity.db.getNameFromDrawable(thirdPlayerDrawableName);
@@ -240,6 +278,18 @@ public class SinglePick extends AppCompatActivity {
         nation3.setText(thirdPlayerNation);
         nation4.setText(fourthPlayerNation);
         nation5.setText(fifthPlayerNation);
+
+        rating1.setText(firstPlayerRating);
+        rating2.setText(secondPlayerRating);
+        rating3.setText(thirdPlayerRating);
+        rating4.setText(fourthPlayerRating);
+        rating5.setText(fifthPlayerRating);
+
+        position1.setText(firstPlayerPosition);
+        position2.setText(secondPlayerPosition);
+        position3.setText(thirdPlayerPosition);
+        position4.setText(fourthPlayerPosition);
+        position5.setText(fifthPlayerPosition);
 
 
 

@@ -127,6 +127,166 @@
         app:layout_constraintVertical_bias=".02" />
 
     <TextView
+        android:id="@+id/playerRating1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Test Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".05" />
+
+    <TextView
+        android:id="@+id/playerRating2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Test Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".25" />
+
+    <TextView
+        android:id="@+id/playerRating3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Test Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".46" />
+
+    <TextView
+        android:id="@+id/playerRating4"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Test Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".67" />
+
+    <TextView
+        android:id="@+id/playerRating5"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Test Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".87" />
+
+    <TextView
+        android:id="@+id/playerPosition5"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Test Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".94" />
+
+    <TextView
+        android:id="@+id/playerPosition4"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Test Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".74" />
+
+    <TextView
+        android:id="@+id/playerPosition3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Test Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".53" />
+
+    <TextView
+        android:id="@+id/playerPosition2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Test Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".32" />
+
+    <TextView
+        android:id="@+id/playerPosition1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Test Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".125" />
+
+    <TextView
         android:id="@+id/player2Name"
         android:layout_width="300dp"
         android:layout_height="30dp"
@@ -429,6 +589,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".965" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
