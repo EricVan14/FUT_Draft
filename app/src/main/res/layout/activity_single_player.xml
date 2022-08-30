@@ -613,4 +613,42 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.91" />
 
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:text="FINISH"
+        android:textAlignment="center"
+        android:textColor="#F6F6F5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:rippleColor="#100F0F" />
+
+    <Button
+        android:id="@+id/quitButton"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:text="QUIT"
+        android:textAlignment="center"
+        android:textColor="#F6F6F5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:rippleColor="#100F0F" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

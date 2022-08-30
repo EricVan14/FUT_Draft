@@ -6,12 +6,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SinglePlayer extends AppCompatActivity {
 
     public ImageView lw, st, rw, lcm, cam, rcm, lb, lcb, rcb, rb, gk;
+    public Button quit, finish;
     public Integer lwChem, stChem, rwChem, lcmChem, camChem, rcmChem, lbChem, lcbChem, rcbChem, rbChem, gkChem, totalChem;
     public ImageView lwTost, rwTost, rcmTorw, lcmTolw, camTost, rcmTocam, lcmTocam, lbTolcm, rbTorcm, rcbTorb, lcbTolb, lcbTorcb, gkTolcb, gkTorcb;
     public String currentPosition;
@@ -45,6 +47,7 @@ public class SinglePlayer extends AppCompatActivity {
     public Integer id;
     public String str;
     public String stringRating;
+    public String stringChem;
 
     public String lwtostLink;
     public String rwtostLink;
@@ -67,6 +70,10 @@ public class SinglePlayer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_player);
+
+        quit = findViewById(R.id.quitButton);
+        finish = findViewById(R.id.finishButton);
+
 
         lw = findViewById(R.id.LW);
         rw = findViewById(R.id.RW);
@@ -137,6 +144,26 @@ public class SinglePlayer extends AppCompatActivity {
 
 
         ///////////                  ALL ON CLICK LISTENERS             ////////////////////////
+
+
+
+        quit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(SinglePlayer.this, MainActivity.class);
+                SinglePlayer.this.startActivity(myIntent);
+            }
+        });
+
+        finish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(SinglePlayer.this, finish_screen.class);
+                myIntent.putExtra("RATING", stringRating);
+                myIntent.putExtra("CHEM", stringChem);
+                SinglePlayer.this.startActivity(myIntent);
+            }
+        });
 
 
         lw.setOnClickListener(new View.OnClickListener() {
@@ -2125,11 +2152,11 @@ public class SinglePlayer extends AppCompatActivity {
 
         totalChem = stChem+lwChem+rwChem+lcmChem+camChem+rcmChem+lbChem+lcbChem+rcbChem+rbChem+gkChem;
         if(totalChem >= 100){
-            chemValue.setText("100");
+            stringChem = "100";
         }else{
-            str = Integer.toString(totalChem);
-            chemValue.setText(str);
+            stringChem = Integer.toString(totalChem);
         }
+        chemValue.setText(stringChem);
     }
 
     public void setUpRating(){
@@ -2138,7 +2165,7 @@ public class SinglePlayer extends AppCompatActivity {
         /////////////////              SET UP RATING                 ////////////////////////////
 
         totalRating = (gkRating + rbRating + rcbRating + lcbRating + lbRating + rcmRating + camRating + lcmRating + rwRating + stRating + lwRating)/11;
-        str = Integer.toString(totalRating);
-        ratingValue.setText(str);
+        stringRating = Integer.toString(totalRating);
+        ratingValue.setText(stringRating);
     }
 }
