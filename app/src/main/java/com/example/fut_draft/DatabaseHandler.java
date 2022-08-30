@@ -15,7 +15,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public static final String PLAYER_TABLE_NAME = "players"; //Table name
     public static final String PLAYER_PRIMARY_KEY = "playersID"; //Primary Key
     public static final String PLAYER_COL_RATING = "rating"; //First column name (drawable names)
-
     public static final String PLAYER_COL_DRAWABLE_NAME = "drawable_name"; //First column name (drawable names)
     public static final String PLAYER_COL_POSITION = "position"; //Second column name (positions)
     public static final String PLAYER_COL_CLUB = "club"; //Third column name (club)

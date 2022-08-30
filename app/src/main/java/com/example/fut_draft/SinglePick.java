@@ -15,7 +15,6 @@ import java.util.ArrayList;
 public class SinglePick extends AppCompatActivity {
 
     public String currentPosition;
-    public String currentPlayerDrawableName;
     public ImageView first, second, third, fourth, fifth;
     public TextView name1, name2, name3, name4, name5, club1, club2, club3, club4, club5, league1, league2, league3, league4, league5, nation1, nation2, nation3, nation4, nation5;
     public TextView rating1, rating2, rating3, rating4, rating5, position1, position2, position3, position4, position5;
@@ -299,9 +298,31 @@ public class SinglePick extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //playerName = players name not done yet we need to know who they pick
-                currentPlayerDrawableName = firstPlayerDrawableName;
+                if(currentPosition.equals("LW")){
+                    lwCurrentPlayerDrawableName = firstPlayerDrawableName;
+                }
+                if(currentPosition.equals("RW")){
+                    rwCurrentPlayerDrawableName = firstPlayerDrawableName;
+                }if(currentPosition.equals("ST")){
+                    stCurrentPlayerDrawableName = firstPlayerDrawableName;
+                }if(currentPosition.equals("LCM")){
+                    lcmCurrentPlayerDrawableName = firstPlayerDrawableName;
+                }if(currentPosition.equals("CAM")){
+                    camCurrentPlayerDrawableName = firstPlayerDrawableName;
+                }if(currentPosition.equals("RCM")){
+                    rcmCurrentPlayerDrawableName = firstPlayerDrawableName;
+                }if(currentPosition.equals("LB")){
+                    lbCurrentPlayerDrawableName = firstPlayerDrawableName;
+                }if(currentPosition.equals("LCB")){
+                    lcbCurrentPlayerDrawableName = firstPlayerDrawableName;
+                }if(currentPosition.equals("RCB")){
+                    rcbCurrentPlayerDrawableName = firstPlayerDrawableName;
+                }if(currentPosition.equals("RB")){
+                    rbCurrentPlayerDrawableName = firstPlayerDrawableName;
+                }if(currentPosition.equals("GK")){
+                    gkCurrentPlayerDrawableName = firstPlayerDrawableName;
+                }
                 Intent myIntent = new Intent(SinglePick.this, SinglePlayer.class);
-                myIntent.putExtra("CURRENT_PLAYER_DRAWABLE_NAME", currentPlayerDrawableName);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_ST", stCurrentPlayerDrawableName);
@@ -324,9 +345,31 @@ public class SinglePick extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //playerName = players name not done yet we need to know who they pick
-                currentPlayerDrawableName = secondPlayerDrawableName;
+                if(currentPosition.equals("LW")){
+                    lwCurrentPlayerDrawableName = secondPlayerDrawableName;
+                }
+                if(currentPosition.equals("RW")){
+                    rwCurrentPlayerDrawableName = secondPlayerDrawableName;
+                }if(currentPosition.equals("ST")){
+                    stCurrentPlayerDrawableName = secondPlayerDrawableName;
+                }if(currentPosition.equals("LCM")){
+                    lcmCurrentPlayerDrawableName = secondPlayerDrawableName;
+                }if(currentPosition.equals("CAM")){
+                    camCurrentPlayerDrawableName = secondPlayerDrawableName;
+                }if(currentPosition.equals("RCM")){
+                    rcmCurrentPlayerDrawableName = secondPlayerDrawableName;
+                }if(currentPosition.equals("LB")){
+                    lbCurrentPlayerDrawableName = secondPlayerDrawableName;
+                }if(currentPosition.equals("LCB")){
+                    lcbCurrentPlayerDrawableName = secondPlayerDrawableName;
+                }if(currentPosition.equals("RCB")){
+                    rcbCurrentPlayerDrawableName = secondPlayerDrawableName;
+                }if(currentPosition.equals("RB")){
+                    rbCurrentPlayerDrawableName = secondPlayerDrawableName;
+                }if(currentPosition.equals("GK")){
+                    gkCurrentPlayerDrawableName = secondPlayerDrawableName;
+                }
                 Intent myIntent = new Intent(SinglePick.this, SinglePlayer.class);
-                myIntent.putExtra("CURRENT_PLAYER_DRAWABLE_NAME", currentPlayerDrawableName);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_ST", stCurrentPlayerDrawableName);
@@ -349,9 +392,31 @@ public class SinglePick extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //playerName = players name not done yet we need to know who they pick
-                currentPlayerDrawableName = thirdPlayerDrawableName;
+                if(currentPosition.equals("LW")){
+                    lwCurrentPlayerDrawableName = thirdPlayerDrawableName;
+                }
+                if(currentPosition.equals("RW")){
+                    rwCurrentPlayerDrawableName = thirdPlayerDrawableName;
+                }if(currentPosition.equals("ST")){
+                    stCurrentPlayerDrawableName = thirdPlayerDrawableName;
+                }if(currentPosition.equals("LCM")){
+                    lcmCurrentPlayerDrawableName = thirdPlayerDrawableName;
+                }if(currentPosition.equals("CAM")){
+                    camCurrentPlayerDrawableName = thirdPlayerDrawableName;
+                }if(currentPosition.equals("RCM")){
+                    rcmCurrentPlayerDrawableName = thirdPlayerDrawableName;
+                }if(currentPosition.equals("LB")){
+                    lbCurrentPlayerDrawableName = thirdPlayerDrawableName;
+                }if(currentPosition.equals("LCB")){
+                    lcbCurrentPlayerDrawableName = thirdPlayerDrawableName;
+                }if(currentPosition.equals("RCB")){
+                    rcbCurrentPlayerDrawableName = thirdPlayerDrawableName;
+                }if(currentPosition.equals("RB")){
+                    rbCurrentPlayerDrawableName = thirdPlayerDrawableName;
+                }if(currentPosition.equals("GK")){
+                    gkCurrentPlayerDrawableName = thirdPlayerDrawableName;
+                }
                 Intent myIntent = new Intent(SinglePick.this, SinglePlayer.class);
-                myIntent.putExtra("CURRENT_PLAYER_DRAWABLE_NAME", currentPlayerDrawableName);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_ST", stCurrentPlayerDrawableName);
@@ -374,9 +439,31 @@ public class SinglePick extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //playerName = players name not done yet we need to know who they pick
-                currentPlayerDrawableName = fourthPlayerDrawableName;
+                if(currentPosition.equals("LW")){
+                    lwCurrentPlayerDrawableName = fourthPlayerDrawableName;
+                }
+                if(currentPosition.equals("RW")){
+                    rwCurrentPlayerDrawableName = fourthPlayerDrawableName;
+                }if(currentPosition.equals("ST")){
+                    stCurrentPlayerDrawableName = fourthPlayerDrawableName;
+                }if(currentPosition.equals("LCM")){
+                    lcmCurrentPlayerDrawableName = fourthPlayerDrawableName;
+                }if(currentPosition.equals("CAM")){
+                    camCurrentPlayerDrawableName = fourthPlayerDrawableName;
+                }if(currentPosition.equals("RCM")){
+                    rcmCurrentPlayerDrawableName = fourthPlayerDrawableName;
+                }if(currentPosition.equals("LB")){
+                    lbCurrentPlayerDrawableName = fourthPlayerDrawableName;
+                }if(currentPosition.equals("LCB")){
+                    lcbCurrentPlayerDrawableName = fourthPlayerDrawableName;
+                }if(currentPosition.equals("RCB")){
+                    rcbCurrentPlayerDrawableName = fourthPlayerDrawableName;
+                }if(currentPosition.equals("RB")){
+                    rbCurrentPlayerDrawableName = fourthPlayerDrawableName;
+                }if(currentPosition.equals("GK")){
+                    gkCurrentPlayerDrawableName = fourthPlayerDrawableName;
+                }
                 Intent myIntent = new Intent(SinglePick.this, SinglePlayer.class);
-                myIntent.putExtra("CURRENT_PLAYER_DRAWABLE_NAME", currentPlayerDrawableName);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_ST", stCurrentPlayerDrawableName);
@@ -399,9 +486,31 @@ public class SinglePick extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //playerName = players name not done yet we need to know who they pick
-                currentPlayerDrawableName = fifthPlayerDrawableName;
+                if(currentPosition.equals("LW")){
+                    lwCurrentPlayerDrawableName = fifthPlayerDrawableName;
+                }
+                if(currentPosition.equals("RW")){
+                    rwCurrentPlayerDrawableName = fifthPlayerDrawableName;
+                }if(currentPosition.equals("ST")){
+                    stCurrentPlayerDrawableName = fifthPlayerDrawableName;
+                }if(currentPosition.equals("LCM")){
+                    lcmCurrentPlayerDrawableName = fifthPlayerDrawableName;
+                }if(currentPosition.equals("CAM")){
+                    camCurrentPlayerDrawableName = fifthPlayerDrawableName;
+                }if(currentPosition.equals("RCM")){
+                    rcmCurrentPlayerDrawableName = fifthPlayerDrawableName;
+                }if(currentPosition.equals("LB")){
+                    lbCurrentPlayerDrawableName = fifthPlayerDrawableName;
+                }if(currentPosition.equals("LCB")){
+                    lcbCurrentPlayerDrawableName = fifthPlayerDrawableName;
+                }if(currentPosition.equals("RCB")){
+                    rcbCurrentPlayerDrawableName = fifthPlayerDrawableName;
+                }if(currentPosition.equals("RB")){
+                    rbCurrentPlayerDrawableName = fifthPlayerDrawableName;
+                }if(currentPosition.equals("GK")){
+                    gkCurrentPlayerDrawableName = fifthPlayerDrawableName;
+                }
                 Intent myIntent = new Intent(SinglePick.this, SinglePlayer.class);
-                myIntent.putExtra("CURRENT_PLAYER_DRAWABLE_NAME", currentPlayerDrawableName);
                 myIntent.putExtra("POSITION", currentPosition);
                 myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_ST", stCurrentPlayerDrawableName);
