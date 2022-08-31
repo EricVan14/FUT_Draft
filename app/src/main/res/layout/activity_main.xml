@@ -18,7 +18,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.47"
-        app:srcCompat="@drawable/grass_field_background" />
+        app:srcCompat="@drawable/finish_screen_background" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="357dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:text="FUT DRAFT"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#5F96DA"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
 
     <Button
         android:id="@+id/singlePlayer"
@@ -38,10 +58,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/BackgroundGrass"
-        app:layout_constraintVertical_bias="0.626" />
+        app:layout_constraintVertical_bias="0.9" />
 
     <Button
         android:id="@+id/splitScreen"
@@ -58,7 +78,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/BackgroundGrass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.568" />

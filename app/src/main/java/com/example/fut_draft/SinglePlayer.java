@@ -158,10 +158,13 @@ public class SinglePlayer extends AppCompatActivity {
         finish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(SinglePlayer.this, finish_screen.class);
-                myIntent.putExtra("RATING", stringRating);
-                myIntent.putExtra("CHEM", stringChem);
-                SinglePlayer.this.startActivity(myIntent);
+                if((lwCurrentPlayerDrawableName != null) && (stCurrentPlayerDrawableName != null) && (rwCurrentPlayerDrawableName != null) && (lcmCurrentPlayerDrawableName != null) && (camCurrentPlayerDrawableName != null) && (rcmCurrentPlayerDrawableName != null) && (lbCurrentPlayerDrawableName != null) && (lcbCurrentPlayerDrawableName != null) && (rcbCurrentPlayerDrawableName != null) && (rbCurrentPlayerDrawableName != null) && (gkCurrentPlayerDrawableName != null)){
+                    Intent myIntent = new Intent(SinglePlayer.this, finish_screen.class);
+                    myIntent.putExtra("RATING", stringRating);
+                    myIntent.putExtra("CHEM", stringChem);
+                    SinglePlayer.this.startActivity(myIntent);
+                }
+
             }
         });
 
