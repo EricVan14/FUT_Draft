@@ -1520,23 +1520,29 @@ public class SinglePlayer extends AppCompatActivity {
         if(rwtostLink != null && lwtostLink != null && camtostLink != null){
             if((rwtostLink.equals("GREEN") && lwtostLink.equals("GREEN")) || (rwtostLink.equals("GREEN") && camtostLink.equals("GREEN")) || (camtostLink.equals("GREEN") && lwtostLink.equals("GREEN"))){
                 stChem = 10;
-            }
-            if(rwtostLink.equals("GREEN") || lwtostLink.equals("GREEN")  || camtostLink.equals("GREEN")){
-                if(rwtostLink.equals("YELLOW") || lwtostLink.equals("YELLOW")  || camtostLink.equals("YELLOW")){
-                    stChem = 10;
-                }
-            }
-            if(rwtostLink.equals("YELLOW") && lwtostLink.equals("YELLOW") && camtostLink.equals("YELLOW")){
-                stChem = 10;
             }else{
-                if((rwtostLink.equals("YELLOW") && lwtostLink.equals("YELLOW")) || (rwtostLink.equals("YELLOW") && camtostLink.equals("YELLOW")) || (camtostLink.equals("YELLOW") && lwtostLink.equals("YELLOW"))){
-                    stChem = 7;
-                }else{
+                if(rwtostLink.equals("GREEN") || lwtostLink.equals("GREEN")  || camtostLink.equals("GREEN")){
                     if(rwtostLink.equals("YELLOW") || lwtostLink.equals("YELLOW")  || camtostLink.equals("YELLOW")){
-                        stChem = 3;
+                        stChem = 10;
+                    }else{
+                        stChem = 7;
+                    }
+                }else{
+                    if(rwtostLink.equals("YELLOW") && lwtostLink.equals("YELLOW") && camtostLink.equals("YELLOW")){
+                        stChem = 10;
+                    }else{
+                        if((rwtostLink.equals("YELLOW") && lwtostLink.equals("YELLOW")) || (rwtostLink.equals("YELLOW") && camtostLink.equals("YELLOW")) || (camtostLink.equals("YELLOW") && lwtostLink.equals("YELLOW"))){
+                            stChem = 7;
+                        }else{
+                            if(rwtostLink.equals("YELLOW") || lwtostLink.equals("YELLOW")  || camtostLink.equals("YELLOW")){
+                                stChem = 3;
+                            }
+                        }
                     }
                 }
+
             }
+
 
         }
 
@@ -1544,23 +1550,29 @@ public class SinglePlayer extends AppCompatActivity {
         if(lcmtolwLink != null && lcmtocamLink != null && lbtolcmLink != null){
             if((lcmtolwLink.equals("GREEN") && lcmtocamLink.equals("GREEN")) || (lcmtolwLink.equals("GREEN") && lbtolcmLink.equals("GREEN")) || (lbtolcmLink.equals("GREEN") && lcmtocamLink.equals("GREEN"))){
                 lcmChem = 10;
-            }
-            if(lcmtolwLink.equals("GREEN") || lcmtocamLink.equals("GREEN")  || lbtolcmLink.equals("GREEN")){
-                if(lcmtolwLink.equals("YELLOW") || lcmtocamLink.equals("YELLOW")  || lbtolcmLink.equals("YELLOW")){
-                    lcmChem = 10;
-                }
-            }
-            if(lcmtolwLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW") && lbtolcmLink.equals("YELLOW")){
-                lcmChem = 10;
             }else{
-                if((lcmtolwLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW")) || (lcmtolwLink.equals("YELLOW") && lbtolcmLink.equals("YELLOW")) || (lbtolcmLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW"))){
-                    lcmChem = 7;
-                }else{
+                if(lcmtolwLink.equals("GREEN") || lcmtocamLink.equals("GREEN")  || lbtolcmLink.equals("GREEN")){
                     if(lcmtolwLink.equals("YELLOW") || lcmtocamLink.equals("YELLOW")  || lbtolcmLink.equals("YELLOW")){
-                        lcmChem = 3;
+                        lcmChem = 10;
+                    }else{
+                        lcmChem = 7;
+                    }
+                }else{
+                    if(lcmtolwLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW") && lbtolcmLink.equals("YELLOW")){
+                        lcmChem = 10;
+                    }else{
+                        if((lcmtolwLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW")) || (lcmtolwLink.equals("YELLOW") && lbtolcmLink.equals("YELLOW")) || (lbtolcmLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW"))){
+                            lcmChem = 7;
+                        }else{
+                            if(lcmtolwLink.equals("YELLOW") || lcmtocamLink.equals("YELLOW")  || lbtolcmLink.equals("YELLOW")){
+                                lcmChem = 3;
+                            }
+                        }
                     }
                 }
+
             }
+
 
         }
 
@@ -1568,23 +1580,29 @@ public class SinglePlayer extends AppCompatActivity {
         if(camtostLink != null && lcmtocamLink != null && rcmtocamLink != null){
             if((camtostLink.equals("GREEN") && lcmtocamLink.equals("GREEN")) || (camtostLink.equals("GREEN") && rcmtocamLink.equals("GREEN")) || (rcmtocamLink.equals("GREEN") && lcmtocamLink.equals("GREEN"))){
                 camChem = 10;
-            }
-            if(camtostLink.equals("GREEN") || lcmtocamLink.equals("GREEN")  || rcmtocamLink.equals("GREEN")){
-                if(camtostLink.equals("YELLOW") || lcmtocamLink.equals("YELLOW")  || rcmtocamLink.equals("YELLOW")){
-                    camChem = 10;
-                }
-            }
-            if(camtostLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")){
-                camChem = 10;
             }else{
-                if((camtostLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW")) || (camtostLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")) || (rcmtocamLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW"))){
-                    camChem = 7;
-                }else{
+                if(camtostLink.equals("GREEN") || lcmtocamLink.equals("GREEN")  || rcmtocamLink.equals("GREEN")){
                     if(camtostLink.equals("YELLOW") || lcmtocamLink.equals("YELLOW")  || rcmtocamLink.equals("YELLOW")){
-                        camChem = 3;
+                        camChem = 10;
+                    }else{
+                        camChem = 7;
+                    }
+                }else{
+                    if(camtostLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")){
+                        camChem = 10;
+                    }else{
+                        if((camtostLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW")) || (camtostLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")) || (rcmtocamLink.equals("YELLOW") && lcmtocamLink.equals("YELLOW"))){
+                            camChem = 7;
+                        }else{
+                            if(camtostLink.equals("YELLOW") || lcmtocamLink.equals("YELLOW")  || rcmtocamLink.equals("YELLOW")){
+                                camChem = 3;
+                            }
+                        }
                     }
                 }
+
             }
+
 
         }
 
@@ -1592,23 +1610,29 @@ public class SinglePlayer extends AppCompatActivity {
         if(rcmtorwLink != null && rbtorcmLink != null && rcmtocamLink != null){
             if((rcmtorwLink.equals("GREEN") && rbtorcmLink.equals("GREEN")) || (rcmtorwLink.equals("GREEN") && rcmtocamLink.equals("GREEN")) || (rcmtocamLink.equals("GREEN") && rbtorcmLink.equals("GREEN"))){
                 rcmChem = 10;
-            }
-            if(rcmtorwLink.equals("GREEN") || rbtorcmLink.equals("GREEN")  || rcmtocamLink.equals("GREEN")){
-                if(rcmtorwLink.equals("YELLOW") || rbtorcmLink.equals("YELLOW")  || rcmtocamLink.equals("YELLOW")){
-                    rcmChem = 10;
-                }
-            }
-            if(rcmtorwLink.equals("YELLOW") && rbtorcmLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")){
-                rcmChem = 10;
             }else{
-                if((rcmtorwLink.equals("YELLOW") && rbtorcmLink.equals("YELLOW")) || (rcmtorwLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")) || (rcmtocamLink.equals("YELLOW") && rbtorcmLink.equals("YELLOW"))){
-                    rcmChem = 7;
-                }else{
+                if(rcmtorwLink.equals("GREEN") || rbtorcmLink.equals("GREEN")  || rcmtocamLink.equals("GREEN")){
                     if(rcmtorwLink.equals("YELLOW") || rbtorcmLink.equals("YELLOW")  || rcmtocamLink.equals("YELLOW")){
-                        rcmChem = 3;
+                        rcmChem = 10;
+                    }else{
+                        rcmChem = 7;
+                    }
+                }else {
+                    if(rcmtorwLink.equals("YELLOW") && rbtorcmLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")){
+                        rcmChem = 10;
+                    }else{
+                        if((rcmtorwLink.equals("YELLOW") && rbtorcmLink.equals("YELLOW")) || (rcmtorwLink.equals("YELLOW") && rcmtocamLink.equals("YELLOW")) || (rcmtocamLink.equals("YELLOW") && rbtorcmLink.equals("YELLOW"))){
+                            rcmChem = 7;
+                        }else{
+                            if(rcmtorwLink.equals("YELLOW") || rbtorcmLink.equals("YELLOW")  || rcmtocamLink.equals("YELLOW")){
+                                rcmChem = 3;
+                            }
+                        }
                     }
                 }
+
             }
+
 
         }
 
@@ -1633,23 +1657,29 @@ public class SinglePlayer extends AppCompatActivity {
         if(lcbtolbLink != null && lcbtorcbLink != null && gktolcbLink != null){
             if((lcbtolbLink.equals("GREEN") && lcbtorcbLink.equals("GREEN")) || (lcbtolbLink.equals("GREEN") && gktolcbLink.equals("GREEN")) || (gktolcbLink.equals("GREEN") && lcbtorcbLink.equals("GREEN"))){
                 lcbChem = 10;
-            }
-            if(lcbtolbLink.equals("GREEN") || lcbtorcbLink.equals("GREEN")  || gktolcbLink.equals("GREEN")){
-                if(lcbtolbLink.equals("YELLOW") || lcbtorcbLink.equals("YELLOW")  || gktolcbLink.equals("YELLOW")){
-                    lcbChem = 10;
-                }
-            }
-            if(lcbtolbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW") && gktolcbLink.equals("YELLOW")){
-                lcbChem = 10;
             }else{
-                if((lcbtolbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW")) || (lcbtolbLink.equals("YELLOW") && gktolcbLink.equals("YELLOW")) || (gktolcbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW"))){
-                    lcbChem = 7;
-                }else{
+                if(lcbtolbLink.equals("GREEN") || lcbtorcbLink.equals("GREEN")  || gktolcbLink.equals("GREEN")){
                     if(lcbtolbLink.equals("YELLOW") || lcbtorcbLink.equals("YELLOW")  || gktolcbLink.equals("YELLOW")){
-                        lcbChem = 3;
+                        lcbChem = 10;
+                    }else{
+                        lcbChem = 7;
+                    }
+                }else{
+                    if(lcbtolbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW") && gktolcbLink.equals("YELLOW")){
+                        lcbChem = 10;
+                    }else{
+                        if((lcbtolbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW")) || (lcbtolbLink.equals("YELLOW") && gktolcbLink.equals("YELLOW")) || (gktolcbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW"))){
+                            lcbChem = 7;
+                        }else{
+                            if(lcbtolbLink.equals("YELLOW") || lcbtorcbLink.equals("YELLOW")  || gktolcbLink.equals("YELLOW")){
+                                lcbChem = 3;
+                            }
+                        }
                     }
                 }
+
             }
+
 
         }
 
@@ -1657,23 +1687,29 @@ public class SinglePlayer extends AppCompatActivity {
         if(rcbtorbLink != null && lcbtorcbLink != null && gktorcbLink != null){
             if((rcbtorbLink.equals("GREEN") && lcbtorcbLink.equals("GREEN")) || (rcbtorbLink.equals("GREEN") && gktorcbLink.equals("GREEN")) || (gktorcbLink.equals("GREEN") && lcbtorcbLink.equals("GREEN"))){
                 rcbChem = 10;
-            }
-            if(rcbtorbLink.equals("GREEN") || lcbtorcbLink.equals("GREEN")  || gktorcbLink.equals("GREEN")){
-                if(rcbtorbLink.equals("YELLOW") || lcbtorcbLink.equals("YELLOW")  || gktorcbLink.equals("YELLOW")){
-                    rcbChem = 10;
-                }
-            }
-            if(rcbtorbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW") && gktorcbLink.equals("YELLOW")){
-                rcbChem = 10;
             }else{
-                if((rcbtorbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW")) || (rcbtorbLink.equals("YELLOW") && gktorcbLink.equals("YELLOW")) || (gktorcbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW"))){
-                    rcbChem = 7;
-                }else{
+                if(rcbtorbLink.equals("GREEN") || lcbtorcbLink.equals("GREEN")  || gktorcbLink.equals("GREEN")){
                     if(rcbtorbLink.equals("YELLOW") || lcbtorcbLink.equals("YELLOW")  || gktorcbLink.equals("YELLOW")){
-                        rcbChem = 3;
+                        rcbChem = 10;
+                    }else{
+                        rcbChem = 7;
+                    }
+                }else{
+                    if(rcbtorbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW") && gktorcbLink.equals("YELLOW")){
+                        rcbChem = 10;
+                    }else{
+                        if((rcbtorbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW")) || (rcbtorbLink.equals("YELLOW") && gktorcbLink.equals("YELLOW")) || (gktorcbLink.equals("YELLOW") && lcbtorcbLink.equals("YELLOW"))){
+                            rcbChem = 7;
+                        }else{
+                            if(rcbtorbLink.equals("YELLOW") || lcbtorcbLink.equals("YELLOW")  || gktorcbLink.equals("YELLOW")){
+                                rcbChem = 3;
+                            }
+                        }
                     }
                 }
+
             }
+
 
         }
 
