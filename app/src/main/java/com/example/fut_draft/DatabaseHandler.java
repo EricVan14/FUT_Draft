@@ -13,6 +13,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     //Initializations for players table
     public static final String PLAYER_TABLE_NAME = "players"; //Table name
+    public static final String USER_TABLE_NAME = "users"; //Table name
+    public static final String USER_PRIMARY_KEY = "usersID"; //Primary Key
     public static final String PLAYER_PRIMARY_KEY = "playersID"; //Primary Key
     public static final String PLAYER_COL_RATING = "rating"; //First column name (drawable names)
     public static final String PLAYER_COL_DRAWABLE_NAME = "drawable_name"; //First column name (drawable names)
@@ -21,6 +23,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public static final String PLAYER_COL_COUNTRY = "country"; //Fourth column name (country)
     public static final String PLAYER_COL_LEAGUE = "league"; //Fifth column name (league)
     public static final String PLAYER_COL_FULL_NAME = "fullName"; //sixth column name (full name)
+    public static final String USER_COL_TOP_PLAYERS = "topPlayers"; //sixth column name (full name)
+    public static final String USER_COL_DRAFT_RATING= "draftRating"; //sixth column name (full name)
+
 
 
     public Integer first;
@@ -32,7 +37,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 
     public DatabaseHandler(Context context) {
-        super(context, "players.db", null, 13);
+        super(context, "playersAndUsers.db", null, 1);
     }
 
     public DatabaseHandler(Context context, String name, int version) {
@@ -41,7 +46,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     @Override //"CREATE TABLE" Creates a table automatically when constructor is called
     public void onCreate(SQLiteDatabase db) {
-        //Users table
+
         String createPlayers = "CREATE TABLE " + PLAYER_TABLE_NAME
                 + "("
                 + PLAYER_PRIMARY_KEY + " INTEGER " + "PRIMARY KEY,"
@@ -52,10 +57,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + PLAYER_COL_COUNTRY + " STRING,"
                 + PLAYER_COL_LEAGUE + " STRING,"
                 + PLAYER_COL_FULL_NAME + " STRING"
+
                 + ")";
 
+        String createUsers = "CREATE TABLE " + USER_TABLE_NAME + "(" + USER_PRIMARY_KEY + " INTEGER " + "PRIMARY KEY," + USER_COL_TOP_PLAYERS + " STRING, " + USER_COL_DRAFT_RATING + " INTEGER" + ")";
 
         db.execSQL(createPlayers);
+        db.execSQL(createUsers);
+
 
     }
 
@@ -63,12 +72,24 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         String upgrade = "DROP TABLE IF EXISTS " + PLAYER_TABLE_NAME;
         db.execSQL(upgrade);
+        String upgrade1 = "DROP TABLE IF EXISTS " + USER_TABLE_NAME;
+        db.execSQL(upgrade1);
     }
 
     public void clearDatabase() {
         SQLiteDatabase db = this.getWritableDatabase();
         String clearDBQuery = "DELETE FROM "+PLAYER_TABLE_NAME;
+        String clearDBQuery1 = "DELETE FROM "+USER_TABLE_NAME;
         db.execSQL(clearDBQuery);
+        db.execSQL(clearDBQuery1);
+
+    }
+
+    public void clearUserDatabase() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String clearDBQuery1 = "DELETE FROM "+USER_TABLE_NAME;
+        db.execSQL(clearDBQuery1);
+
     }
 
     public void addPlayer(String rating, String drawableName, String position, String club, String country, String league, String fullName){
@@ -84,8 +105,209 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.insert(PLAYER_TABLE_NAME, null, values);
     }
 
+    public void addSingleTopPlayer(String name, Integer rating){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(USER_COL_TOP_PLAYERS, name);
+        values.put(USER_COL_DRAFT_RATING, rating);
+        db.insert(USER_TABLE_NAME, null, values);
+    }
+
+    public ArrayList<String> addTopPlayer(String name, Integer rating){
+        ArrayList<String> topPlayers = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        String one = null, two = null, three = null, four = null, five = null, six = null, seven = null, eight = null, nine = null, ten = null, placeHolderstr = null;
+        Integer oneRating = 0, twoRating = 0, threeRating = 0, fourRating = 0, fiveRating = 0, sixRating = 0, sevenRating = 0, eightRating = 0, nineRating = 0, tenRating = 0, placeHolderint = 0;
+        String query = "SELECT " + USER_COL_TOP_PLAYERS + " FROM " + USER_TABLE_NAME;
+        Cursor cursor = db.rawQuery(query, null);
+
+        if(cursor.moveToFirst()){
+            one = cursor.getString(0);
+        }
+        if(cursor.moveToNext()){
+            two = cursor.getString(0);
+        }
+        if(cursor.moveToNext()){
+            three = cursor.getString(0);
+        }
+        if(cursor.moveToNext()){
+            four = cursor.getString(0);
+        }
+        if(cursor.moveToNext()){
+            five = cursor.getString(0);
+        }
+        if(cursor.moveToNext()){
+            six = cursor.getString(0);
+        }
+        if(cursor.moveToNext()){
+            seven = cursor.getString(0);
+        }
+        if(cursor.moveToNext()){
+            eight = cursor.getString(0);
+        }
+        if(cursor.moveToNext()){
+            nine = cursor.getString(0);
+        }
+        if(cursor.moveToNext()){
+            ten = cursor.getString(0);
+        }
+
+        query = "SELECT " + USER_COL_DRAFT_RATING + " FROM " + USER_TABLE_NAME;
+        cursor = db.rawQuery(query, null);
+
+        if(cursor.moveToFirst()){
+            oneRating = cursor.getInt(0);
+        }
+        if(cursor.moveToNext()){
+            twoRating = cursor.getInt(0);
+        }
+        if(cursor.moveToNext()){
+            threeRating = cursor.getInt(0);
+        }
+        if(cursor.moveToNext()){
+            fourRating = cursor.getInt(0);
+        }
+        if(cursor.moveToNext()){
+            fiveRating = cursor.getInt(0);
+        }
+        if(cursor.moveToNext()){
+            sixRating = cursor.getInt(0);
+        }
+        if(cursor.moveToNext()){
+            sevenRating = cursor.getInt(0);
+        }
+        if(cursor.moveToNext()){
+            eightRating = cursor.getInt(0);
+        }
+        if(cursor.moveToNext()){
+            nineRating = cursor.getInt(0);
+        }
+        if(cursor.moveToNext()){
+            tenRating = cursor.getInt(0);
+        }
+
+        if(rating > tenRating){
+            tenRating = rating;
+            ten = name;
+        }
+
+        if(rating > nineRating){
+            tenRating = nineRating;
+            ten = nine;
+            nineRating = rating;
+            nine = name;
+        }
+
+        if(rating > eightRating){
+            nineRating = eightRating;
+            nine = eight;
+            eightRating = rating;
+            eight = name;
+        }
+
+        if(rating > sevenRating){
+            eightRating = sevenRating;
+            eight = seven;
+            sevenRating = rating;
+            seven = name;
+        }
+
+        if(rating > sixRating){
+            sevenRating = sixRating;
+            seven = six;
+            sixRating = rating;
+            six = name;
+        }
+
+        if(rating > fiveRating){
+            sixRating = fiveRating;
+            six = five;
+            fiveRating = rating;
+            five = name;
+        }
+
+        if(rating > fourRating){
+            fiveRating = fourRating;
+            five = four;
+            fourRating = rating;
+            four = name;
+        }
+
+        if(rating > threeRating){
+            fourRating = threeRating;
+            four = three;
+            threeRating = rating;
+            three = name;
+        }
+
+        if(rating > twoRating){
+            threeRating = twoRating;
+            three = two;
+            twoRating = rating;
+            two = name;
+        }
+
+        if(rating > oneRating){
+            twoRating = oneRating;
+            two = one;
+            oneRating = rating;
+            one = name;
+        }
+
+        this.clearUserDatabase();
+        addSingleTopPlayer(one, oneRating);
+        addSingleTopPlayer(two, twoRating);
+        addSingleTopPlayer(three, threeRating);
+        addSingleTopPlayer(four, fourRating);
+        addSingleTopPlayer(five, fiveRating);
+        addSingleTopPlayer(six, sixRating);
+        addSingleTopPlayer(seven, sevenRating);
+        addSingleTopPlayer(eight, eightRating);
+        addSingleTopPlayer(nine, nineRating);
+        addSingleTopPlayer(ten, tenRating);
+        topPlayers.add(one);
+        topPlayers.add(two);
+        topPlayers.add(three);
+        topPlayers.add(four);
+        topPlayers.add(five);
+        topPlayers.add(six);
+        topPlayers.add(seven);
+        topPlayers.add(eight);
+        topPlayers.add(nine);
+        topPlayers.add(ten);
+        return topPlayers;
+    }
+
+
+    public Integer getRatingFromName(String name){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT " + USER_COL_DRAFT_RATING + " FROM " + USER_TABLE_NAME + " WHERE " + USER_COL_TOP_PLAYERS + " = \"" + name + "\"";
+        Integer foundPlayer = null;
+        Cursor cursor = db.rawQuery(query, null);
+        if(cursor.moveToFirst()){
+            foundPlayer = cursor.getInt(0);
+        }
+        cursor.close();
+
+        return foundPlayer;
+
+    }
+
+
+
     public void addDefaults() {
         //Add preset players to the database
+        this.addSingleTopPlayer("Position 1", 0);
+        this.addSingleTopPlayer("Position 2", 0);
+        this.addSingleTopPlayer("Position 3", 0);
+        this.addSingleTopPlayer("Position 4", 0);
+        this.addSingleTopPlayer("Position 5", 0);
+        this.addSingleTopPlayer("Position 6", 0);
+        this.addSingleTopPlayer("Position 7", 0);
+        this.addSingleTopPlayer("Position 8", 0);
+        this.addSingleTopPlayer("Position 9", 0);
+        this.addSingleTopPlayer("Position 10", 0);
+
         this.addPlayer("79","abdoulaye_doucoure", "MID", "Everton", "France", "Premier League", "Abdoulaye Doucoure");
         this.addPlayer("78","abraham", "ST", "Roma", "England", "SERIE A", "Tammy Abraham");
         this.addPlayer("83","acerbi", "CB", "Lazio", "Italy", "SERIE A", "Francesco Acerbi");
@@ -238,6 +460,70 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 
     }
+
+    public String getNumberOfNations(ArrayList<String> players){
+        ArrayList <String> alreadyCounted = new ArrayList<>();
+        Integer numberOfNations = 0;
+        String player;
+        String playerNation;
+        String strNumber;
+        for(int i = 0; i < 11; i++){
+            player = players.get(i);
+            playerNation = this.getNationFromDrawable(player);
+            if(!alreadyCounted.contains(playerNation)){
+                alreadyCounted.add(playerNation);
+                numberOfNations++;
+            }
+        }
+        strNumber = Integer.toString(numberOfNations);
+        return strNumber;
+
+    }
+
+    public ArrayList<String> getTopThreePlayers(ArrayList<String> players){
+        ArrayList <String> topThree = new ArrayList<>();
+        String player;
+        Integer playerRating;
+        Integer playerRating1;
+        for(int i = 0; i < 11; i++){
+            for(int y= i+1; y < 11; y++){
+                playerRating = Integer.parseInt(getRatingFromDrawable(players.get(i)));
+                playerRating1 = Integer.parseInt(getRatingFromDrawable(players.get(y)));
+                if(playerRating1 > playerRating){
+                    player = players.get(i);
+                    players.set(i, players.get(y));
+                    players.set(y, player);
+                }
+            }
+        }
+        topThree.add(players.get(0));
+        topThree.add(players.get(1));
+        topThree.add(players.get(2));
+
+
+        return topThree;
+
+    }
+
+    public String getNumberOfLeagues(ArrayList<String> players){
+        ArrayList <String> alreadyCounted = new ArrayList<>();
+        Integer numberOfLeagues = 0;
+        String player;
+        String playerLeague;
+        String strNumber;
+        for(int i = 0; i < 11; i++){
+            player = players.get(i);
+            playerLeague = this.getLeagueFromDrawable(player);
+            if(!alreadyCounted.contains(playerLeague)){
+                alreadyCounted.add(playerLeague);
+                numberOfLeagues++;
+            }
+        }
+        strNumber = Integer.toString(numberOfLeagues);
+        return strNumber;
+
+    }
+
 
     public ArrayList<String> findDrawableNamesFromPosition(String position, ArrayList<String> alreadyPicked){
         SQLiteDatabase db = this.getReadableDatabase();

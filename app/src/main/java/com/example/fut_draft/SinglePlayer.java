@@ -16,7 +16,7 @@ public class SinglePlayer extends AppCompatActivity {
     public Button quit, finish;
     public Integer lwChem, stChem, rwChem, lcmChem, camChem, rcmChem, lbChem, lcbChem, rcbChem, rbChem, gkChem, totalChem;
     public ImageView lwTost, rwTost, rcmTorw, lcmTolw, camTost, rcmTocam, lcmTocam, lbTolcm, rbTorcm, rcbTorb, lcbTolb, lcbTorcb, gkTolcb, gkTorcb;
-    public String currentPosition;
+    public String currentPosition, name;
     public String currentSwitchPosition;
     public String nextSwitchPosition;
     public String lwCurrentPlayerDrawableName;
@@ -125,6 +125,7 @@ public class SinglePlayer extends AppCompatActivity {
         rcbCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_RCB");
         rbCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_RB");
         gkCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_GK");
+        name = getIntent().getStringExtra("NAME");
         lwRating = 0;
         stRating = 0;
         rwRating = 0;
@@ -162,6 +163,18 @@ public class SinglePlayer extends AppCompatActivity {
                     Intent myIntent = new Intent(SinglePlayer.this, finish_screen.class);
                     myIntent.putExtra("RATING", stringRating);
                     myIntent.putExtra("CHEM", stringChem);
+                    myIntent.putExtra("NAME", name);
+                    myIntent.putExtra("POSITION_LW", lwCurrentPlayerDrawableName);
+                    myIntent.putExtra("POSITION_ST", stCurrentPlayerDrawableName);
+                    myIntent.putExtra("POSITION_RW", rwCurrentPlayerDrawableName);
+                    myIntent.putExtra("POSITION_RCM", rcmCurrentPlayerDrawableName);
+                    myIntent.putExtra("POSITION_CAM", camCurrentPlayerDrawableName);
+                    myIntent.putExtra("POSITION_LCM", lcmCurrentPlayerDrawableName);
+                    myIntent.putExtra("POSITION_LB", lbCurrentPlayerDrawableName);
+                    myIntent.putExtra("POSITION_LCB", lcbCurrentPlayerDrawableName);
+                    myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
+                    myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
+                    myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
                     SinglePlayer.this.startActivity(myIntent);
                 }
 
@@ -253,6 +266,7 @@ public class SinglePlayer extends AppCompatActivity {
                     myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                    myIntent.putExtra("NAME", name);
                     SinglePlayer.this.startActivity(myIntent);
                 }
             }
@@ -342,6 +356,8 @@ public class SinglePlayer extends AppCompatActivity {
                     myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                    myIntent.putExtra("NAME", name);
+
                     SinglePlayer.this.startActivity(myIntent);
                 }
 
@@ -434,6 +450,8 @@ public class SinglePlayer extends AppCompatActivity {
                     myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                    myIntent.putExtra("NAME", name);
+
                     SinglePlayer.this.startActivity(myIntent);
                 }
 
@@ -526,6 +544,8 @@ public class SinglePlayer extends AppCompatActivity {
                     myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                    myIntent.putExtra("NAME", name);
+
                     SinglePlayer.this.startActivity(myIntent);
                 }
 
@@ -618,6 +638,8 @@ public class SinglePlayer extends AppCompatActivity {
                     myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                    myIntent.putExtra("NAME", name);
+
                     SinglePlayer.this.startActivity(myIntent);
                 }
 
@@ -710,6 +732,8 @@ public class SinglePlayer extends AppCompatActivity {
                     myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                    myIntent.putExtra("NAME", name);
+
                     SinglePlayer.this.startActivity(myIntent);
                 }
 
@@ -802,6 +826,8 @@ public class SinglePlayer extends AppCompatActivity {
                     myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                    myIntent.putExtra("NAME", name);
+
                     SinglePlayer.this.startActivity(myIntent);
                 }
 
@@ -894,6 +920,8 @@ public class SinglePlayer extends AppCompatActivity {
                     myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                    myIntent.putExtra("NAME", name);
+
                     SinglePlayer.this.startActivity(myIntent);
                 }
 
@@ -986,6 +1014,8 @@ public class SinglePlayer extends AppCompatActivity {
                     myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                    myIntent.putExtra("NAME", name);
+
                     SinglePlayer.this.startActivity(myIntent);
                 }
 
@@ -1078,6 +1108,8 @@ public class SinglePlayer extends AppCompatActivity {
                     myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                    myIntent.putExtra("NAME", name);
+
                     SinglePlayer.this.startActivity(myIntent);
                 }
 
@@ -1170,6 +1202,8 @@ public class SinglePlayer extends AppCompatActivity {
                     myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                     myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                    myIntent.putExtra("NAME", name);
+
                     SinglePlayer.this.startActivity(myIntent);
                 }
 

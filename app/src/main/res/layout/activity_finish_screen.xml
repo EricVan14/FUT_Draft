@@ -418,7 +418,7 @@
         app:layout_constraintVertical_bias="0.55" />
 
     <ProgressBar
-        android:id="@+id/darftRatingProgressBar"
+        android:id="@+id/draftRatingProgressBar"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="300dp"
         android:layout_height="45dp"
@@ -570,5 +570,507 @@
 
 
     </TableLayout>
+
+    <TableLayout
+        android:layout_width="375dp"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/p1_player"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="Player One"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <TextView
+                android:id="@+id/p6_player"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginStart="10dp"
+                android:text="Player Six"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/p2_player"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginStart="10dp"
+                android:text="Player Two"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <TextView
+                android:id="@+id/p7_player"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:text="Player Seven"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/p3_player"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginStart="10dp"
+                android:text="Player Three"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <TextView
+                android:id="@+id/p8_player"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginStart="10dp"
+                android:text="Player Eight"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/p4_player"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="Player Four"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <TextView
+                android:id="@+id/p9_player"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="Player Nine"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/p5_player"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginStart="10dp"
+                android:text="Player Five"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <TextView
+                android:id="@+id/p10_player"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginStart="10dp"
+                android:text="Player Ten"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#3F51B5"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="375dp"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/p1_playerRating"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#197AF1"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <TextView
+                android:id="@+id/p6_playerRating"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#197AF1"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/p2_playerRating"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#197AF1"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <TextView
+                android:id="@+id/p7_playerRating"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginEnd="10dp"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#197AF1"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/p3_playerRating"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#197AF1"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <TextView
+                android:id="@+id/p8_playerRating"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginEnd="10dp"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#197AF1"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/p4_playerRating"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginEnd="10dp"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#197AF1"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <TextView
+                android:id="@+id/p9_playerRating"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#197AF1"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/p5_playerRating"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#197AF1"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <TextView
+                android:id="@+id/p10_playerRating"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#197AF1"
+                android:textColorLink="#5F96DA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.69" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

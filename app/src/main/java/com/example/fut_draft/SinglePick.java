@@ -72,7 +72,7 @@ public class SinglePick extends AppCompatActivity {
     public String fourthPlayerPosition;
     public String fifthPlayerPosition;
 
-    public String position;
+    public String position, name;
 
     public Context c;
     public Integer id;
@@ -93,6 +93,8 @@ public class SinglePick extends AppCompatActivity {
         rcbCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_RCB");
         rbCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_RB");
         gkCurrentPlayerDrawableName = getIntent().getStringExtra("POSITION_GK");
+        name = getIntent().getStringExtra("NAME");
+
 
         first = findViewById(R.id.playerCard1);
         second = findViewById(R.id.playerCard2);
@@ -335,6 +337,8 @@ public class SinglePick extends AppCompatActivity {
                 myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                myIntent.putExtra("NAME", name);
+
                 SinglePick.this.startActivity(myIntent);
 
 
@@ -382,6 +386,8 @@ public class SinglePick extends AppCompatActivity {
                 myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                myIntent.putExtra("NAME", name);
+
                 SinglePick.this.startActivity(myIntent);
 
 
@@ -429,6 +435,8 @@ public class SinglePick extends AppCompatActivity {
                 myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                myIntent.putExtra("NAME", name);
+
                 SinglePick.this.startActivity(myIntent);
 
 
@@ -476,6 +484,8 @@ public class SinglePick extends AppCompatActivity {
                 myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                myIntent.putExtra("NAME", name);
+
                 SinglePick.this.startActivity(myIntent);
 
 
@@ -523,6 +533,8 @@ public class SinglePick extends AppCompatActivity {
                 myIntent.putExtra("POSITION_RCB", rcbCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_RB", rbCurrentPlayerDrawableName);
                 myIntent.putExtra("POSITION_GK", gkCurrentPlayerDrawableName);
+                myIntent.putExtra("NAME", name);
+
                 SinglePick.this.startActivity(myIntent);
 
 
