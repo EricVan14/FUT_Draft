@@ -265,16 +265,16 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         addSingleTopPlayer(eight, eightRating);
         addSingleTopPlayer(nine, nineRating);
         addSingleTopPlayer(ten, tenRating);
-        topPlayers.add(one);
-        topPlayers.add(two);
-        topPlayers.add(three);
-        topPlayers.add(four);
-        topPlayers.add(five);
-        topPlayers.add(six);
-        topPlayers.add(seven);
-        topPlayers.add(eight);
-        topPlayers.add(nine);
-        topPlayers.add(ten);
+        topPlayers.add(0,one);
+        topPlayers.add(1,two);
+        topPlayers.add(2,three);
+        topPlayers.add(3,four);
+        topPlayers.add(4,five);
+        topPlayers.add(5,six);
+        topPlayers.add(6,seven);
+        topPlayers.add(7,eight);
+        topPlayers.add(8,nine);
+        topPlayers.add(9,ten);
         return topPlayers;
     }
 
@@ -442,7 +442,43 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.addPlayer("80","demme", "MID", "Napoli", "Germany", "SERIE A", "Diego Demme");
         this.addPlayer("77","dendoncker", "MID", "Wolverhampton Wanderers", "Belgium", "Premier League", "Leander Dendoncker");
         this.addPlayer("79","deulofeu", "LW", "Udinese", "Spain", "SERIE A", "Gerard Deulofeu");
-
+        this.addPlayer("80","di_lorenzo", "RB", "Napoli", "Italy", "SERIE A", "Giovanni Di Lorenzo");
+        this.addPlayer("87","di_maria", "RW", "Juventus", "Argentina", "SERIE A", "Angel Di Maria");
+        this.addPlayer("80","diaz", "LW", "Liverpool", "Columbia", "Premier League", "Luis Diaz");
+        this.addPlayer("82","diego_carlos", "CB", "Aston Villa", "Brazil", "Premier League", "Diego Carlos");
+        this.addPlayer("77","diego_llorente", "CB", "Leeds United", "Spain", "Premier League", "Diego Llorente");
+        this.addPlayer("79","dier", "CB", "Tottenham", "England", "Premier League", "Eric Dier");
+        this.addPlayer("75","difrancesco", "ST", "Lecce", "Italy", "SERIE A", "Federico Di Francesco");
+        this.addPlayer("84","digne", "LB", "Aston Villa", "France", "Premier League", "Lucas Digne");
+        this.addPlayer("76","dimarco", "LB", "Inter Milan", "Italy", "SERIE A", "federico Dimarco");
+        this.addPlayer("76","doigo_dalot", "RB", "Manchester United", "Portugal", "Premier League", "Diogo Dalot");
+        this.addPlayer("82","doigo_jota", "LW", "liverpool", "Portugal", "Premier League", "Diogo Jota");
+        this.addPlayer("77","diop", "CB", "West Ham", "France", "Premier League", "Issa Diop");
+        this.addPlayer("79","djimsiti", "CB", "Atalanta", "Albania", "SERIE A", "Berat Djimsiti");
+        this.addPlayer("78","doherty", "RB", "Tottenham", "Ireland", "Premier League", "Matt Doherty");
+        this.addPlayer("75","dominguez", "MID", "Bologna", "Argentina", "SERIE A", "Nicolas Dominguez");
+        this.addPlayer("75","doucoure", "MID", "Crystal Palace", "Mali", "Premier League", "Cheick Doucoure");
+        this.addPlayer("77","douglas_luiz", "MID", "Aston Villa", "Brazil", "Premier League", "Douglas Luiz");
+        this.addPlayer("77","dragowski", "GK", "Spezia", "Poland", "SERIE A", "Bartlomiej Dragowski");
+        this.addPlayer("81","dubravka", "GK", "Newcastle", "Slovakia", "Premier League", "Martin Dubravka");
+        this.addPlayer("82","dumfries", "RB", "Inter Milan", "Netherlands", "SERIE A", "Denzel Dumfries");
+        this.addPlayer("78","dunk", "CB", "Brighton", "England", "Premier League", "Lewis Dunk");
+        this.addPlayer("87","dybala", "ST", "Roma", "Argentina", "SERIE A", "Paulo Dybala");
+        this.addPlayer("83","dzeko", "ST", "Inter Milan", "Bosnia and Herzegovina", "SERIE A", "Edin Dzeko");
+        this.addPlayer("89","ederson", "GK", "Manchester City", "Brazil", "Premier League", "Ederson Moraes");
+        this.addPlayer("75","edouard", "ST", "Crystal Palace", "France", "Premier League", "Odsonne Edouard");
+        this.addPlayer("83","edouard_mendy", "GK", "Chelsea", "Senegal", "Premier League", "Edouard Mendy");
+        this.addPlayer("76","ekdal", "MID", "Spezia", "Sweden", "SERIE A", "Albin Ekdal");
+        this.addPlayer("76","el_ghazi", "LW", "Aston Villa", "Netherlands", "Premier League", "Anwar El-Ghazi");
+        this.addPlayer("79","el_shaarawy", "LW", "Roma", "Italy", "SERIE A", "Stephan El Shaarawy");
+        this.addPlayer("77","eleneny", "MID", "Arsenal", "Egypt", "Premier League", "Mohamed Elneny");
+        this.addPlayer("75","elyounoussi", "LW", "Southampton", "Norway", "Premier League", "Mohamed Elyounoussi");
+        this.addPlayer("78","emerson", "LB", "Chelsea", "Italy", "Premier League", "Emerson");
+        this.addPlayer("79","emerson_royal", "RB", "Tottenham", "Brazil", "Premier League", "Emerson Royal");
+        this.addPlayer("82","eriksen", "MID", "Manchester United", "Denmark", "Premier League", "Christian Eriksen");
+        this.addPlayer("80","evans", "CB", "Leicester City", "Northern Ireland", "Premier League", "Jonny Evans");
+        this.addPlayer("77","eze", "LW", "Crystal Palace", "England", "Premier League", "Eberechi Eze");
+        this.addPlayer("82","fabian", "MID", "Napoli", "Spain", "SERIE A", "Fabian");
 
 
 

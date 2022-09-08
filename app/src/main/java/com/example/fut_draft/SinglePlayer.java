@@ -192,59 +192,60 @@ public class SinglePlayer extends AppCompatActivity {
                         if(currentSwitchPosition.equals(nextSwitchPosition)){
                             currentSwitchPosition = null;
                             nextSwitchPosition = null;
+                        }else{
+                            if(currentSwitchPosition.equals("ST")){
+                                String placeholder = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RW")){
+                                String placeholder = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCM")){
+                                String placeholder = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCM")){
+                                String placeholder = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("CAM")){
+                                String placeholder = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LB")){
+                                String placeholder = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCB")){
+                                String placeholder = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCB")){
+                                String placeholder = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RB")){
+                                String placeholder = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("GK")){
+                                String placeholder = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = placeholder;
+                            }
+                            currentSwitchPosition = null;
+                            nextSwitchPosition = null;
                         }
-                        if(currentSwitchPosition.equals("ST")){
-                            String placeholder = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RW")){
-                            String placeholder = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCM")){
-                            String placeholder = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCM")){
-                            String placeholder = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("CAM")){
-                            String placeholder = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LB")){
-                            String placeholder = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCB")){
-                            String placeholder = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCB")){
-                            String placeholder = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RB")){
-                            String placeholder = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("GK")){
-                            String placeholder = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = placeholder;
-                        }
-                        currentSwitchPosition = null;
-                        nextSwitchPosition = null;
                         setUpPlayers();
                         setUpLinks();
                         setUpChem();
@@ -282,59 +283,61 @@ public class SinglePlayer extends AppCompatActivity {
                         if(currentSwitchPosition.equals(nextSwitchPosition)){
                             currentSwitchPosition = null;
                             nextSwitchPosition = null;
+                        }else{
+                            if(currentSwitchPosition.equals("LW")){
+                                String placeholder = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RW")){
+                                String placeholder = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCM")){
+                                String placeholder = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCM")){
+                                String placeholder = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("CAM")){
+                                String placeholder = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LB")){
+                                String placeholder = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCB")){
+                                String placeholder = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCB")){
+                                String placeholder = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RB")){
+                                String placeholder = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("GK")){
+                                String placeholder = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = placeholder;
+                            }
+                            currentSwitchPosition = null;
+                            nextSwitchPosition = null;
                         }
-                        if(currentSwitchPosition.equals("LW")){
-                            String placeholder = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RW")){
-                            String placeholder = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCM")){
-                            String placeholder = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCM")){
-                            String placeholder = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("CAM")){
-                            String placeholder = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LB")){
-                            String placeholder = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCB")){
-                            String placeholder = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCB")){
-                            String placeholder = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RB")){
-                            String placeholder = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("GK")){
-                            String placeholder = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = placeholder;
-                        }
-                        currentSwitchPosition = null;
-                        nextSwitchPosition = null;
+
                         setUpPlayers();
                         setUpLinks();
                         setUpChem();
@@ -375,59 +378,61 @@ public class SinglePlayer extends AppCompatActivity {
                         if(currentSwitchPosition.equals(nextSwitchPosition)){
                             currentSwitchPosition = null;
                             nextSwitchPosition = null;
+                        }else{
+                            if(currentSwitchPosition.equals("ST")){
+                                String placeholder = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LW")){
+                                String placeholder = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCM")){
+                                String placeholder = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCM")){
+                                String placeholder = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("CAM")){
+                                String placeholder = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LB")){
+                                String placeholder = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCB")){
+                                String placeholder = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCB")){
+                                String placeholder = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RB")){
+                                String placeholder = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("GK")){
+                                String placeholder = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = placeholder;
+                            }
+                            currentSwitchPosition = null;
+                            nextSwitchPosition = null;
                         }
-                        if(currentSwitchPosition.equals("ST")){
-                            String placeholder = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LW")){
-                            String placeholder = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCM")){
-                            String placeholder = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCM")){
-                            String placeholder = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("CAM")){
-                            String placeholder = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LB")){
-                            String placeholder = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCB")){
-                            String placeholder = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCB")){
-                            String placeholder = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RB")){
-                            String placeholder = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("GK")){
-                            String placeholder = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = placeholder;
-                        }
-                        currentSwitchPosition = null;
-                        nextSwitchPosition = null;
+
                         setUpPlayers();
                         setUpLinks();
                         setUpChem();
@@ -469,59 +474,61 @@ public class SinglePlayer extends AppCompatActivity {
                         if(currentSwitchPosition.equals(nextSwitchPosition)){
                             currentSwitchPosition = null;
                             nextSwitchPosition = null;
+                        }else{
+                            if(currentSwitchPosition.equals("ST")){
+                                String placeholder = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LW")){
+                                String placeholder = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RW")){
+                                String placeholder = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCM")){
+                                String placeholder = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("CAM")){
+                                String placeholder = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LB")){
+                                String placeholder = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCB")){
+                                String placeholder = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCB")){
+                                String placeholder = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RB")){
+                                String placeholder = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("GK")){
+                                String placeholder = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = placeholder;
+                            }
+                            currentSwitchPosition = null;
+                            nextSwitchPosition = null;
                         }
-                        if(currentSwitchPosition.equals("ST")){
-                            String placeholder = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LW")){
-                            String placeholder = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RW")){
-                            String placeholder = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCM")){
-                            String placeholder = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("CAM")){
-                            String placeholder = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LB")){
-                            String placeholder = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCB")){
-                            String placeholder = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCB")){
-                            String placeholder = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RB")){
-                            String placeholder = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("GK")){
-                            String placeholder = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = placeholder;
-                        }
-                        currentSwitchPosition = null;
-                        nextSwitchPosition = null;
+
                         setUpPlayers();
                         setUpLinks();
                         setUpChem();
@@ -563,59 +570,61 @@ public class SinglePlayer extends AppCompatActivity {
                         if(currentSwitchPosition.equals(nextSwitchPosition)){
                             currentSwitchPosition = null;
                             nextSwitchPosition = null;
+                        }else{
+                            if(currentSwitchPosition.equals("ST")){
+                                String placeholder = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LW")){
+                                String placeholder = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RW")){
+                                String placeholder = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCM")){
+                                String placeholder = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCM")){
+                                String placeholder = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LB")){
+                                String placeholder = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCB")){
+                                String placeholder = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCB")){
+                                String placeholder = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RB")){
+                                String placeholder = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("GK")){
+                                String placeholder = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = placeholder;
+                            }
+                            currentSwitchPosition = null;
+                            nextSwitchPosition = null;
                         }
-                        if(currentSwitchPosition.equals("ST")){
-                            String placeholder = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LW")){
-                            String placeholder = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RW")){
-                            String placeholder = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCM")){
-                            String placeholder = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCM")){
-                            String placeholder = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LB")){
-                            String placeholder = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCB")){
-                            String placeholder = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCB")){
-                            String placeholder = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RB")){
-                            String placeholder = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("GK")){
-                            String placeholder = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = placeholder;
-                        }
-                        currentSwitchPosition = null;
-                        nextSwitchPosition = null;
+
                         setUpPlayers();
                         setUpLinks();
                         setUpChem();
@@ -657,59 +666,61 @@ public class SinglePlayer extends AppCompatActivity {
                         if(currentSwitchPosition.equals(nextSwitchPosition)){
                             currentSwitchPosition = null;
                             nextSwitchPosition = null;
+                        }else{
+                            if(currentSwitchPosition.equals("ST")){
+                                String placeholder = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LW")){
+                                String placeholder = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RW")){
+                                String placeholder = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("CAM")){
+                                String placeholder = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCM")){
+                                String placeholder = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LB")){
+                                String placeholder = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCB")){
+                                String placeholder = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCB")){
+                                String placeholder = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RB")){
+                                String placeholder = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("GK")){
+                                String placeholder = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = placeholder;
+                            }
+                            currentSwitchPosition = null;
+                            nextSwitchPosition = null;
                         }
-                        if(currentSwitchPosition.equals("ST")){
-                            String placeholder = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LW")){
-                            String placeholder = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RW")){
-                            String placeholder = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("CAM")){
-                            String placeholder = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCM")){
-                            String placeholder = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LB")){
-                            String placeholder = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCB")){
-                            String placeholder = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCB")){
-                            String placeholder = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RB")){
-                            String placeholder = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("GK")){
-                            String placeholder = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = placeholder;
-                        }
-                        currentSwitchPosition = null;
-                        nextSwitchPosition = null;
+
                         setUpPlayers();
                         setUpLinks();
                         setUpChem();
@@ -751,59 +762,61 @@ public class SinglePlayer extends AppCompatActivity {
                         if(currentSwitchPosition.equals(nextSwitchPosition)){
                             currentSwitchPosition = null;
                             nextSwitchPosition = null;
+                        }else{
+                            if(currentSwitchPosition.equals("ST")){
+                                String placeholder = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LW")){
+                                String placeholder = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RW")){
+                                String placeholder = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("CAM")){
+                                String placeholder = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCM")){
+                                String placeholder = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCM")){
+                                String placeholder = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCB")){
+                                String placeholder = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCB")){
+                                String placeholder = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RB")){
+                                String placeholder = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("GK")){
+                                String placeholder = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = placeholder;
+                            }
+                            currentSwitchPosition = null;
+                            nextSwitchPosition = null;
                         }
-                        if(currentSwitchPosition.equals("ST")){
-                            String placeholder = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LW")){
-                            String placeholder = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RW")){
-                            String placeholder = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("CAM")){
-                            String placeholder = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCM")){
-                            String placeholder = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCM")){
-                            String placeholder = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCB")){
-                            String placeholder = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCB")){
-                            String placeholder = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RB")){
-                            String placeholder = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("GK")){
-                            String placeholder = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = placeholder;
-                        }
-                        currentSwitchPosition = null;
-                        nextSwitchPosition = null;
+
                         setUpPlayers();
                         setUpLinks();
                         setUpChem();
@@ -845,59 +858,61 @@ public class SinglePlayer extends AppCompatActivity {
                         if(currentSwitchPosition.equals(nextSwitchPosition)){
                             currentSwitchPosition = null;
                             nextSwitchPosition = null;
+                        }else{
+                            if(currentSwitchPosition.equals("ST")){
+                                String placeholder = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LW")){
+                                String placeholder = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RW")){
+                                String placeholder = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("CAM")){
+                                String placeholder = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCM")){
+                                String placeholder = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCM")){
+                                String placeholder = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LB")){
+                                String placeholder = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCB")){
+                                String placeholder = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RB")){
+                                String placeholder = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("GK")){
+                                String placeholder = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = placeholder;
+                            }
+                            currentSwitchPosition = null;
+                            nextSwitchPosition = null;
                         }
-                        if(currentSwitchPosition.equals("ST")){
-                            String placeholder = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LW")){
-                            String placeholder = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RW")){
-                            String placeholder = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("CAM")){
-                            String placeholder = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCM")){
-                            String placeholder = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCM")){
-                            String placeholder = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LB")){
-                            String placeholder = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCB")){
-                            String placeholder = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RB")){
-                            String placeholder = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("GK")){
-                            String placeholder = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = placeholder;
-                        }
-                        currentSwitchPosition = null;
-                        nextSwitchPosition = null;
+
                         setUpPlayers();
                         setUpLinks();
                         setUpChem();
@@ -939,59 +954,61 @@ public class SinglePlayer extends AppCompatActivity {
                         if(currentSwitchPosition.equals(nextSwitchPosition)){
                             currentSwitchPosition = null;
                             nextSwitchPosition = null;
+                        }else{
+                            if(currentSwitchPosition.equals("ST")){
+                                String placeholder = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LW")){
+                                String placeholder = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RW")){
+                                String placeholder = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("CAM")){
+                                String placeholder = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCM")){
+                                String placeholder = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCM")){
+                                String placeholder = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LB")){
+                                String placeholder = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCB")){
+                                String placeholder = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RB")){
+                                String placeholder = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("GK")){
+                                String placeholder = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = placeholder;
+                            }
+                            currentSwitchPosition = null;
+                            nextSwitchPosition = null;
                         }
-                        if(currentSwitchPosition.equals("ST")){
-                            String placeholder = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LW")){
-                            String placeholder = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RW")){
-                            String placeholder = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("CAM")){
-                            String placeholder = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCM")){
-                            String placeholder = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCM")){
-                            String placeholder = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LB")){
-                            String placeholder = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCB")){
-                            String placeholder = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RB")){
-                            String placeholder = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("GK")){
-                            String placeholder = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = placeholder;
-                        }
-                        currentSwitchPosition = null;
-                        nextSwitchPosition = null;
+
                         setUpPlayers();
                         setUpLinks();
                         setUpChem();
@@ -1033,59 +1050,61 @@ public class SinglePlayer extends AppCompatActivity {
                         if(currentSwitchPosition.equals(nextSwitchPosition)){
                             currentSwitchPosition = null;
                             nextSwitchPosition = null;
+                        }else{
+                            if(currentSwitchPosition.equals("ST")){
+                                String placeholder = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LW")){
+                                String placeholder = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RW")){
+                                String placeholder = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("CAM")){
+                                String placeholder = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCM")){
+                                String placeholder = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCM")){
+                                String placeholder = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LB")){
+                                String placeholder = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCB")){
+                                String placeholder = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCB")){
+                                String placeholder = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("GK")){
+                                String placeholder = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = placeholder;
+                            }
+                            currentSwitchPosition = null;
+                            nextSwitchPosition = null;
                         }
-                        if(currentSwitchPosition.equals("ST")){
-                            String placeholder = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LW")){
-                            String placeholder = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RW")){
-                            String placeholder = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("CAM")){
-                            String placeholder = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCM")){
-                            String placeholder = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCM")){
-                            String placeholder = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LB")){
-                            String placeholder = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCB")){
-                            String placeholder = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCB")){
-                            String placeholder = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("GK")){
-                            String placeholder = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = placeholder;
-                        }
-                        currentSwitchPosition = null;
-                        nextSwitchPosition = null;
+
                         setUpPlayers();
                         setUpLinks();
                         setUpChem();
@@ -1127,59 +1146,61 @@ public class SinglePlayer extends AppCompatActivity {
                         if(currentSwitchPosition.equals(nextSwitchPosition)){
                             currentSwitchPosition = null;
                             nextSwitchPosition = null;
+                        }else{
+                            if(currentSwitchPosition.equals("ST")){
+                                String placeholder = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
+                                stCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LW")){
+                                String placeholder = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
+                                lwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RW")){
+                                String placeholder = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
+                                rwCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("CAM")){
+                                String placeholder = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
+                                camCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCM")){
+                                String placeholder = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
+                                lcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCM")){
+                                String placeholder = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
+                                rcmCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LB")){
+                                String placeholder = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
+                                lbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("LCB")){
+                                String placeholder = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
+                                lcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RCB")){
+                                String placeholder = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
+                                rcbCurrentPlayerDrawableName = placeholder;
+                            }
+                            if(currentSwitchPosition.equals("RB")){
+                                String placeholder = gkCurrentPlayerDrawableName;
+                                gkCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
+                                rbCurrentPlayerDrawableName = placeholder;
+                            }
+                            currentSwitchPosition = null;
+                            nextSwitchPosition = null;
                         }
-                        if(currentSwitchPosition.equals("ST")){
-                            String placeholder = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = stCurrentPlayerDrawableName;
-                            stCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LW")){
-                            String placeholder = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = lwCurrentPlayerDrawableName;
-                            lwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RW")){
-                            String placeholder = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = rwCurrentPlayerDrawableName;
-                            rwCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("CAM")){
-                            String placeholder = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = camCurrentPlayerDrawableName;
-                            camCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCM")){
-                            String placeholder = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = lcmCurrentPlayerDrawableName;
-                            lcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCM")){
-                            String placeholder = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = rcmCurrentPlayerDrawableName;
-                            rcmCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LB")){
-                            String placeholder = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = lbCurrentPlayerDrawableName;
-                            lbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("LCB")){
-                            String placeholder = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = lcbCurrentPlayerDrawableName;
-                            lcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RCB")){
-                            String placeholder = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = rcbCurrentPlayerDrawableName;
-                            rcbCurrentPlayerDrawableName = placeholder;
-                        }
-                        if(currentSwitchPosition.equals("RB")){
-                            String placeholder = gkCurrentPlayerDrawableName;
-                            gkCurrentPlayerDrawableName = rbCurrentPlayerDrawableName;
-                            rbCurrentPlayerDrawableName = placeholder;
-                        }
-                        currentSwitchPosition = null;
-                        nextSwitchPosition = null;
+
                         setUpPlayers();
                         setUpLinks();
                         setUpChem();
